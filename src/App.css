@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Fellix", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-Black.woff2") format("woff2");
+  font-weight: 900; /* Black */
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-BlackItalic.woff2") format("woff2");
+  font-weight: 900; /* Black */
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-BoldItalic.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-ExtraBold.woff2") format("woff2");
+  font-weight: 800; /* Extra Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800; /* Extra Bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-Light.woff2") format("woff2");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-LightItalic.woff2") format("woff2");
+  font-weight: 300; /* Light */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-MediumItalic.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-RegularItalic.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-SemiBold.woff2") format("woff2");
+  font-weight: 600; /* Semi Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600; /* Semi Bold */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-Thin.woff2") format("woff2");
+  font-weight: 100; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fellix";
+  src: url("./assets/fonts/FellixTRIAL-ThinItalic.woff2") format("woff2");
+  font-weight: 100; /* Thin */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix Italics";
+  src: url("./assets/fonts/FellixTRIALVF-Italics.woff2") format("woff2");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fellix Uprights";
+  src: url("./assets/fonts/FellixTRIALVF-Uprights.woff2") format("woff2");
+  font-style: normal;
 }
