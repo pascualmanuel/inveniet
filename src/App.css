@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.max-width {
+  max-width: 1360px;
+  margin: 0 auto; /* Centers the element horizontally */
+  padding: 0 1rem; /* Optional: Add padding to prevent content from touching the edges */
+}
+
+.blue {
+  color: #021e5f;
+}
 body {
   margin: 0;
   font-family: "Fellix", sans-serif;
