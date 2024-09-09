@@ -50,3 +50,46 @@
     ); /* 4 columns when screen width >= 1000px */
   }
 }
+
+.carousel-box {
+  width: 336px !important; /* Fixed width */
+  height: 144px !important; /* Fixed height */
+  background-color: #ccc; /* Gray background */
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box; /* Ensure padding does not affect width/height */
+  transition: margin 0.3s ease; /* Smooth transition for margin change */
+}
+
+.carousel-box h3 {
+  margin: 0 0 8px 0; /* Spacing for title */
+  font-size: 18px;
+}
+
+.carousel-box p {
+  margin: 0; /* No margin for paragraph */
+  font-size: 14px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-initialized {
+  height: 178px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+.swiper-slide-active {
+  margin-left: 16px !important; /* Add left margin to the active slide */
+}
+
+.swiper-slide-prev {
+  margin-right: 20px !important;
+}

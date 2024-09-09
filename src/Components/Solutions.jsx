@@ -30,7 +30,7 @@ const Solutions = () => {
   return (
     <>
       <div className="bg-iGray  w-[100vw]">
-        <div className="center max-w-[570px] ">
+        <div className="center max-w-[570px]">
           <div className="pt-[40px] pb-[25px]">
             <h2>SOLUCIONES</h2>
             <p>Brindamos soporte a las disintas etapas del proceso oral</p>
