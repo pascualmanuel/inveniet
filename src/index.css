@@ -8,3 +8,45 @@
   margin-right: 25px;
   max-width: 440px;
 }
+
+.box-grid {
+  display: grid;
+  gap: 16px;
+  /* justify-content: center; */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  /* width: 326px; */
+
+  height: 272px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  align-self: flex-start; /* Align the icon to the top left */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 1000px) {
+  .box-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columns when screen width >= 600px */
+  }
+}
+
+@media (min-width: 1380px) {
+  .box-grid {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* 4 columns when screen width >= 1000px */
+  }
+}

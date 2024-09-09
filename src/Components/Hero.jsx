@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <div className="max-w-[570px] center">
-        <div className="flex flex-col mx-[25px] mb-[25px]">
+        <div className="flex flex-col  mb-[25px]">
           <h1>Tecnología para modernizar la justicia</h1>
           <p>
             Inveniet es una solución para la planificación, grabación

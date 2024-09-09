@@ -21,6 +21,7 @@ module.exports = {
     extend: {
       colors: {
         iBlue: "#021E5F", // Add your custom blue color
+        iGray: "#F4F7FA", // Add your custom blue color
       },
     },
   },
