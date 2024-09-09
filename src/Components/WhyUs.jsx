@@ -9,7 +9,10 @@ const WhyUs = () => {
           <h2>¿Por qué Inveniet?</h2>
         </div>
         <Carousel />
-        <div className="h-[400px]"></div>
+        <div className="flex justify-center pt-[130px] pb-[60px]">
+          <h2> Algunas de nuestras implementaciones</h2>
+        </div>
+        <div className="flex justify-center">Logos Logos logos logos</div>
       </div>
     </>
   );

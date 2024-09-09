@@ -66,6 +66,7 @@ function Carousel() {
       centeredSlides={false} // Aligns the first box to the left
       pagination={{ clickable: true }}
       autoplay={true}
+      // loop={true}
     >
       {data.map((item, index) => (
         <SwiperSlide key={index} className="carousel-box ">
