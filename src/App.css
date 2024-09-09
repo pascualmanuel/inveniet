@@ -7,6 +7,10 @@
   margin: 0 auto; /* Centers the element horizontally */
   padding: 0 1rem; /* Optional: Add padding to prevent content from touching the edges */
 }
+.center {
+  margin: 0 auto; /* Centers the element horizontally */
+  padding: 0 1rem;
+}
 
 .blue {
   color: #021e5f;

@@ -6,7 +6,7 @@ import Logo from "../assets/logo/InvenietLogoBlack.svg";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar md:flex md:flex-row md:h-24 justify-between max-width items-center">
+      <nav className="navbar md:flex md:flex-row md:h-24 justify-between max-width items-center hidden sm:flex">
         <div className="logo">
           <ReactSVG src={Logo} />
         </div>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <li className="py-2 px-4">
             <a href="#services">Preguntas frecuentes</a>
           </li>
-          <li className=" md:h-[50px] md:w-[125px] flex justify-center items-center bg-blue rounded-lg ml-[18px]">
+          <li className=" md:h-[50px] md:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
             <a href="/#contact" className="contact-button text-white">
               Contacto
             </a>

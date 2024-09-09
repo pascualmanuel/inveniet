@@ -1,0 +1,10 @@
+.hero-img-bg {
+  background-image: url("./assets/hero-img.png");
+  background-size: contain;
+  height: auto;
+  background-repeat: no-repeat;
+  padding-top: 48%;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 440px;
+}

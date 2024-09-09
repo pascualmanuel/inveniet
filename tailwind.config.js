@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        blue: "#021E5F", // Add your custom blue color
+        iBlue: "#021E5F", // Add your custom blue color
       },
     },
   },
