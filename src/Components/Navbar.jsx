@@ -22,7 +22,7 @@ const Navbar = () => {
           </li>
           <li className=" md:h-[50px] md:w-[125px] flex justify-center items-center bg-blue rounded-lg ml-[18px]">
             <a href="/#contact" className="contact-button text-white">
-              Contact
+              Contacto
             </a>
           </li>
         </ul>
