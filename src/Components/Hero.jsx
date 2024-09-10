@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div className="max-w-[570px] center">
         <div className="flex flex-col  mb-[25px]">
-          <h1>Tecnología para modernizar la justicia</h1>
+          <h1 className="myH1">Tecnología para modernizar la justicia</h1>
           <p>
             Inveniet es una solución para la planificación, grabación
             audiovisual, y gestión de procesos judiciales orales.

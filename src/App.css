@@ -145,3 +145,103 @@ body {
   src: url("./assets/fonts/FellixTRIALVF-Uprights.woff2") format("woff2");
   font-style: normal;
 }
+
+.myH1 {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 54px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.myH2 {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.subH {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.label {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.myP {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.myP2 {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121.4%;
+}
+
+.myP3 {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 121.4%;
+}
+
+.myPBold {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+
+.myPBold2 {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 121.4%;
+}
+
+.myCTA {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.1px;
+}
+
+@media (max-width: 1250px) {
+  .myH1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .myH2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -1.2px;
+  }
+  .subH {
+    font-size: 18px;
+  }
+}
