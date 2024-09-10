@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div className="max-w-[570px] center">
         <div className="flex flex-col  mb-[25px]">
-          <h1 className="myH1 mb-[16px] mt-[60px]">
+          <h1 className="myH1 mb-[16px] mt-[30px]">
             Tecnología para modernizar la justicia
           </h1>
           <p className="subH mb-[40px]">

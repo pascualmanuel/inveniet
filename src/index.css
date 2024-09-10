@@ -83,3 +83,56 @@
 .swiper-slide-prev {
   margin-right: 20px !important;
 }
+
+.hamburger {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fa;
+  backdrop-filter: blur(2px);
+  border-radius: 50px;
+}
+
+.line {
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #161c2d;
+  transition: all 0.4s ease;
+}
+
+.line1 {
+  transform: translateY(-6px);
+  margin-bottom: -5px;
+}
+
+.line2 {
+  transform: translateY(6px);
+  margin-bottom: 5px;
+}
+
+.open .line1 {
+  transform: rotate(45deg);
+  margin-bottom: 5px;
+}
+
+.open .line2 {
+  transform: rotate(-45deg);
+  margin-bottom: 5px;
+}
+.open .line {
+  margin-top: 5px;
+  background-color: white;
+}
+
+.open {
+  background-color: #2c3242;
+  /* transition: all 0.3s ease; */
+}
+.nav-open {
+  background-color: #161c2d;
+}

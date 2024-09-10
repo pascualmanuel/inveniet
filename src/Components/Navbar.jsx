@@ -1,13 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import { ReactSVG } from "react-svg";
 import Logo from "../assets/logo/InvenietLogoBlack.svg";
-
+import LogoDoble from "../assets/logo/InvenietLogoDobleColor.svg";
 const Navbar = () => {
+  const [vh, setVh] = useState(0); // Estado para almacenar el valor de vh
+
+  useEffect(() => {
+    const setViewportHeight = () => {
+      // Calcula la altura real del viewport
+      const newVh =
+        window.innerHeight - 86 - 120 - 0.1 * (window.innerHeight - 86 - 120);
+      // Establece la variable CSS
+
+      // Guarda el valor en el estado
+      setVh(newVh);
+      console.log(newVh, "gfs");
+    };
+
+    // Configura el tamaño al cargar la página
+    setViewportHeight();
+
+    // Ajusta el tamaño al cambiar el tamaño de la ventana
+    window.addEventListener("resize", setViewportHeight);
+
+    // Limpia el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener("resize", setViewportHeight);
+    };
+  }, []);
+
+  // Ahora puedes usar el valor de vh en cualquier parte del componente
+  console.log(vh); // Imprime el valor de vh en la consola
+
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [colorLogo, setColorLogo] = useState("black");
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+    setMobileMenuOpen((prev) => {
+      // Toggle the logo color based on the new state of isMobileMenuOpen
+      const newMenuState = !prev;
+      setColorLogo(newMenuState ? "white" : "black");
+      return newMenuState;
+    });
   };
 
   return (
@@ -18,13 +53,13 @@ const Navbar = () => {
           <ReactSVG src={Logo} />
         </div>
         <ul className="md:flex md:flex-row items-center">
-          <li className="py-2 px-4 myPBold">
+          <li className="py-2 px-4 myPBold ">
             <a href="#home">Nosotros</a>
           </li>
-          <li className="py-2 px-4 myPBold">
+          <li className="py-2 px-4 myPBold ">
             <a href="#about">Equipamiento</a>
           </li>
-          <li className="py-2 px-4 myPBold">
+          <li className="py-2 px-4 myPBold ">
             <a href="#services">Preguntas frecuentes</a>
           </li>
           <li className="md:h-[50px] md:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
@@ -36,129 +71,64 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="flex justify-between items-center h-16 px-4 sm:hidden">
+      <nav
+        className={`flex justify-between items-center h-20 px-6 sm:hidden ${
+          isMobileMenuOpen ? "nav-open" : ""
+        }`}
+      >
         <div className="logo">
-          <ReactSVG src={Logo} className="w-20" />{" "}
-          {/* Adjust width as needed */}
+          <ReactSVG
+            src={LogoDoble}
+            beforeInjection={(svg) => {
+              svg.setAttribute("style", `fill: ${colorLogo};`);
+            }}
+            className="logo"
+          />
         </div>
         <button
-          className="hamburger focus:outline-none transition-transform duration-500"
+          className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
           onClick={toggleMobileMenu}
         >
-          {/* Toggle between hamburger and cross icon */}
-          {isMobileMenuOpen ? (
-            // Cross SVG
-            <svg
-              width="36"
-              height="35"
-              viewBox="0 0 36 35"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_b_160_3141)">
-                <circle cx="17.7634" cy="17.5" r="17.5" fill="#2C3242" />
-              </g>
-              <path
-                d="M12.4 25L11 23.6L16.6 18L11 12.4L12.4 11L18 16.6L23.6 11L25 12.4L19.4 18L25 23.6L23.6 25L18 19.4L12.4 25Z"
-                fill="#F4F7FA"
-              />
-              <defs>
-                <filter
-                  id="filter0_b_160_3141"
-                  x="-3.73657"
-                  y="-4"
-                  width="43"
-                  height="43"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
-                  <feComposite
-                    in2="SourceAlpha"
-                    operator="in"
-                    result="effect1_backgroundBlur_160_3141"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_backgroundBlur_160_3141"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          ) : (
-            // Hamburger SVG
-            <svg
-              width="36"
-              height="35"
-              viewBox="0 0 36 35"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_b_159_239)">
-                <circle cx="17.7634" cy="17.5" r="17.5" fill="#F4F7FA" />
-              </g>
-              <rect x="10.2634" y="13" width="15" height="2" fill="#161C2D" />
-              <rect x="10.2634" y="21" width="15" height="2" fill="#161C2D" />
-              <defs>
-                <filter
-                  id="filter0_b_159_239"
-                  x="-3.73657"
-                  y="-4"
-                  width="43"
-                  height="43"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
-                  <feComposite
-                    in2="SourceAlpha"
-                    operator="in"
-                    result="effect1_backgroundBlur_159_239"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_backgroundBlur_159_239"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          )}
+          <div className="line line1"></div>
+          <div className="line line2"></div>
         </button>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-start p-4 space-y-2 transition-all duration-300">
-            <li className="py-2 px-4 myPBold">
-              <a href="#home" onClick={toggleMobileMenu}>
-                Nosotros
-              </a>
-            </li>
-            <li className="py-2 px-4 myPBold">
-              <a href="#about" onClick={toggleMobileMenu}>
-                Equipamiento
-              </a>
-            </li>
-            <li className="py-2 px-4 myPBold">
-              <a href="#services" onClick={toggleMobileMenu}>
-                Preguntas frecuentes
-              </a>
-            </li>
-            <li className="py-2 px-4 myPBold">
-              <a
-                href="#contact"
-                className="contact-button myCTA text-white"
-                onClick={toggleMobileMenu}
-              >
-                Contacto
-              </a>
-            </li>
-          </ul>
+          <>
+            <ul className="absolute h-[100vh] top-20 left-0 w-full bg-iDBlue shadow-md flex flex-col items-start space-y-2 transition-all duration-300 pt-7">
+              <li className="py-2 pl-6 myH2 text-white">
+                <a href="#contact" onClick={toggleMobileMenu}>
+                  Contacto
+                </a>
+              </li>
+              <li className="py-2 pl-6 myH2 text-white">
+                <a href="#home" onClick={toggleMobileMenu}>
+                  Nosotros
+                </a>
+              </li>
+              <li className="py-2 pl-6 myH2 text-white">
+                <a href="#about" onClick={toggleMobileMenu}>
+                  Equipamiento
+                </a>
+              </li>
+              <li className="py-2 pl-6 myH2 text-white">
+                <a href="#services" onClick={toggleMobileMenu}>
+                  Preguntas frecuentes
+                </a>
+              </li>
+              <div className="absolute" style={{ top: `${vh}px` }}>
+                <li className="pl-6 text-[#8D9098]">
+                  11 de septiembre 4717, 4° Piso, CABA, Buenos Aires, Argentina
+                </li>
+                <li className="pl-6 text-[#8D9098]">
+                  Lunes - Viernes: 8 am - 6 pm
+                </li>
+                <li className="pl-6 text-[#8D9098]">contacto@inveniet.com</li>
+                <li className="pl-6 text-[#8D9098]">(+52) 5555 147914</li>
+              </div>
+            </ul>
+          </>
         )}
       </nav>
     </>
