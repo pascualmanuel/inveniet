@@ -6,11 +6,11 @@ const AboutUs = () => {
     <>
       <div className="bg-iDBlue  w-[100vw]">
         <div className="center max-w-[570px] ">
-          <div className="pt-[40px] pb-[25px]">
-            <h2 className="text-white">
+          <div className="pt-[40px] pb-8">
+            <h2 className="text-white myH2 mb-2">
               El futuro de los procesos judiciales orales
             </h2>
-            <p className="text-white">
+            <p className="subH text-iGrey3 pb-[16px]">
               Inveniet ofrece tecnología orientada a los diferentes procesos
               judiciales.
             </p>

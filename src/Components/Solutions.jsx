@@ -33,14 +33,16 @@ const Solutions = () => {
         <div className="center max-w-[570px]">
           <div className="pt-[40px] pb-[25px]">
             <h2 className="labels">SOLUCIONES</h2>
-            <p>Brindamos soporte a las disintas etapas del proceso oral</p>
+            <p className="subH mt-2">
+              Brindamos soporte a las disintas etapas del proceso oral
+            </p>
           </div>
           <div>
             <div className="box-grid pb-[40px]">
               {data.map((item, index) => (
                 <div className="box" key={index}>
                   <ReactSVG className="icon" src={item?.icon} />
-                  <h3>{item?.title}</h3>
+                  <h3 className="myCTA my-[16px]">{item?.title}</h3>
                   <p>{item?.text}</p>
                 </div>
               ))}
