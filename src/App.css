@@ -12,16 +12,22 @@
   padding: 0 1.5rem;
 }
 
-.blue {
-  color: #021e5f;
-}
 body {
   margin: 0;
   font-family: "Fellix", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #161c2d;
 }
 
+p {
+  font-family: "Fellix", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
 @font-face {
   font-family: "Fellix";
   src: url("./assets/fonts/FellixTRIAL-Black.woff2") format("woff2");
@@ -147,6 +153,7 @@ body {
 }
 
 .myH1 {
+  /* H1 Desktop */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 450;
@@ -156,6 +163,7 @@ body {
 }
 
 .myH2 {
+  /* H2 Desktop */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -164,14 +172,17 @@ body {
 }
 
 .subH {
+  /* SubHeading - Desktop */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
+  letter-spacing: 0;
 }
 
-.label {
+.labels {
+  /* Labels */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -180,15 +191,17 @@ body {
   letter-spacing: 1px;
 }
 .myP {
+  /* Body 1 - Regular */
   font-family: "Fellix", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 350;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
 }
 
 .myP2 {
+  /* Body 2 - Regular */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -197,6 +210,7 @@ body {
 }
 
 .myP3 {
+  /* Body 3 - Regular */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -205,6 +219,7 @@ body {
 }
 
 .myPBold {
+  /* Body 1 - Semibold */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -214,6 +229,7 @@ body {
 }
 
 .myPBold2 {
+  /* Body 2 - Semibold */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -222,6 +238,7 @@ body {
 }
 
 .myCTA {
+  /* CTA'S */
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -232,16 +249,19 @@ body {
 
 @media (max-width: 1250px) {
   .myH1 {
+    /* H1 Mobile */
     font-size: 40px;
     line-height: 45px;
   }
   .myH2 {
+    /* H2 Mobile */
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
     letter-spacing: -1.2px;
   }
   .subH {
+    /* SubHeading - Mobile */
     font-size: 18px;
   }
 }

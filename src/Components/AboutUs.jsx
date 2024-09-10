@@ -4,7 +4,7 @@ import Beepannel from "../assets/icons/beepanel.svg";
 const AboutUs = () => {
   return (
     <>
-      <div className="bg-[#161C2D]  w-[100vw]">
+      <div className="bg-iDBlue  w-[100vw]">
         <div className="center max-w-[570px] ">
           <div className="pt-[40px] pb-[25px]">
             <h2 className="text-white">

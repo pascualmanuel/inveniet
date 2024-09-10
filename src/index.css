@@ -12,7 +12,6 @@
 .box-grid {
   display: grid;
   gap: 16px;
-  /* justify-content: center; */
 }
 
 .box {
@@ -21,56 +20,47 @@
   padding: 16px;
   background: #ffffff;
   border-radius: 8px;
-  /* width: 326px; */
-
   height: 272px;
 }
 
 .icon {
   font-size: 24px;
   margin-bottom: 8px;
-  align-self: flex-start; /* Align the icon to the top left */
+  align-self: flex-start;
 }
 
-/* Media queries for responsiveness */
 @media (min-width: 1000px) {
   .box-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* 2 columns when screen width >= 600px */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1380px) {
   .box-grid {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 columns when screen width >= 1000px */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .carousel-box {
-  width: 336px !important; /* Fixed width */
-  height: 144px !important; /* Fixed height */
-  background-color: #ccc; /* Gray background */
-  border-radius: 8px; /* Rounded corners */
+  width: 336px !important;
+  height: 144px !important;
+  background-color: #ccc;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 16px;
-  box-sizing: border-box; /* Ensure padding does not affect width/height */
-  transition: margin 0.3s ease; /* Smooth transition for margin change */
+  box-sizing: border-box;
+  transition: margin 0.3s ease;
 }
 
 .carousel-box h3 {
-  margin: 0 0 8px 0; /* Spacing for title */
+  margin: 0 0 8px 0;
   font-size: 18px;
 }
 
 .carousel-box p {
-  margin: 0; /* No margin for paragraph */
+  margin: 0;
   font-size: 14px;
 }
 
@@ -87,7 +77,7 @@
 }
 
 .swiper-slide-active {
-  margin-left: 16px !important; /* Add left margin to the active slide */
+  margin-left: 16px !important;
 }
 
 .swiper-slide-prev {
