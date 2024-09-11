@@ -17,7 +17,7 @@ const AboutUs = () => {
             <div className=" h-[50px] w-[192px] flex justify-center items-center bg-[#f4f7fa1a] rounded-lg">
               <a
                 href="/#contact"
-                className="contact-button text-white flex flex-row items-center"
+                className="contact-button myCTA text-white flex flex-row items-center"
               >
                 <span className="mr-[10px] text-white">Sobre nosotros</span>
                 <svg
@@ -46,7 +46,14 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div style={{ width: "100%", maxWidth: "500px", margin: "0 auto" }}>
+          <div
+            style={{
+              width: "100%",
+              maxWidth: "500px",
+              margin: "0 auto",
+              paddingBottom: "43px",
+            }}
+          >
             <ReactSVG
               src={Beepannel}
               beforeInjection={(svg) => {
