@@ -5,6 +5,7 @@ import Hero from "./Components/Hero";
 import Solutions from "./Components/Solutions";
 import AboutUs from "./Components/AboutUs";
 import WhyUs from "./Components/WhyUs";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Solutions />
       <AboutUs />
       <WhyUs />
+      <Footer />
     </>
   );
 }

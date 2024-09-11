@@ -132,3 +132,39 @@
 .nav-open {
   background-color: #161c2d;
 }
+
+.logo-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1352px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (min-width: 1180px) {
+  .logo-section {
+    width: 1100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.lines-bg {
+  background: url("./assets/icons/bg-lines-mob.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+@media (min-width: 900px) {
+  .lines-bg {
+    background: url("./assets/icons/bg-lines.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+  }
+}
