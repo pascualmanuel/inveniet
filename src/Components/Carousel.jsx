@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-
+import CheckIcon from "../assets/icons/Check.svg";
 import "swiper/css"; // Core Swiper styles
-
+import { ReactSVG } from "react-svg";
 import "swiper/css/pagination";
 
 const data = [
@@ -65,13 +65,16 @@ function Carousel() {
       slidesPerView="auto" // Allows the display of partial boxes
       centeredSlides={false} // Aligns the first box to the left
       pagination={{ clickable: true }}
-      autoplay={true}
+      // autoplay={true}
       // loop={true}
     >
       {data.map((item, index) => (
         <SwiperSlide key={index} className="carousel-box ">
-          <h3>{item.title}</h3>
-          <p>{item.text}</p>
+          <div className="flex flex-row items-center mb-[16px] ">
+            <ReactSVG src={CheckIcon} />{" "}
+            <h3 className="myCTA  ml-2">{item.title}</h3>
+          </div>
+          <p className="myP">{item.text}</p>
         </SwiperSlide>
       ))}
     </Swiper>

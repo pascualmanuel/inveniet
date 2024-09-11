@@ -43,7 +43,7 @@ const Solutions = () => {
                 <div className="box" key={index}>
                   <ReactSVG className="icon" src={item?.icon} />
                   <h3 className="myCTA my-[16px]">{item?.title}</h3>
-                  <p>{item?.text}</p>
+                  <p className="text-iGrey3">{item?.text}</p>
                 </div>
               ))}
             </div>

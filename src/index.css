@@ -44,7 +44,7 @@
 .carousel-box {
   width: 336px !important;
   height: 144px !important;
-  background-color: #ccc;
+  background-color: #f4f7fa;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -54,18 +54,14 @@
   transition: margin 0.3s ease;
 }
 
-.carousel-box h3 {
+.carousel-box {
   margin: 0 0 8px 0;
   font-size: 18px;
 }
 
-.carousel-box p {
-  margin: 0;
-  font-size: 14px;
-}
-
 .swiper-pagination {
   bottom: 0 !important;
+  scale: 0.7;
 }
 
 .swiper-initialized {
