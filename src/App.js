@@ -6,17 +6,16 @@ import Solutions from "./Components/Solutions";
 import AboutUs from "./Components/AboutUs";
 import WhyUs from "./Components/WhyUs";
 import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <Solutions />
-      <AboutUs />
-      <WhyUs />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
