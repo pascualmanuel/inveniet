@@ -20,6 +20,10 @@ body {
   color: #161c2d;
 }
 
+li {
+  list-style: none;
+}
+
 p {
   font-family: "Fellix", sans-serif;
   font-style: normal;
