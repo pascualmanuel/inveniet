@@ -9,12 +9,10 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Solutions />
       <AboutUs />
       <WhyUs />
-      <Footer />
     </>
   );
 };

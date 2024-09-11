@@ -7,6 +7,7 @@ import AboutUs from "./Components/AboutUs";
 import WhyUs from "./Components/WhyUs";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
