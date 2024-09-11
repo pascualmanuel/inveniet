@@ -9,7 +9,7 @@ import Client2 from "../assets/clientes/rio_negro.png";
 import Client1 from "../assets/clientes/santa_fe.png";
 const logos = [
   { src: Client1, width: 109, height: 40, deskWidth: 171, deskHeight: 64 },
-  { src: Client2, width: 59, height: 30, deskWidth: 113, deskHeight: 90 },
+  { src: Client2, width: 59, height: 43, deskWidth: 113, deskHeight: 90 },
   { src: Client3, width: 96, height: 24, deskWidth: 206, deskHeight: 52 },
   { src: Client4, width: 92, height: 28, deskWidth: 191, deskHeight: 60 },
   { src: Client6, width: 38, height: 32, deskWidth: 76, deskHeight: 62 },
