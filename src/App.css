@@ -20,6 +20,10 @@ body {
   color: #161c2d;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style: none;
 }
