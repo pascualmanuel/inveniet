@@ -255,7 +255,7 @@ p {
   letter-spacing: -0.1px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 768px) {
   .myH1 {
     /* H1 Mobile */
     font-size: 40px;
