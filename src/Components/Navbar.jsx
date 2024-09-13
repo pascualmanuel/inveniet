@@ -3,6 +3,7 @@ import "../App.css";
 import { ReactSVG } from "react-svg";
 import Logo from "../assets/logo/InvenietLogoBlack.svg";
 import LogoDoble from "../assets/logo/InvenietLogoDobleColor.svg";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [vh, setVh] = useState(0); // Estado para almacenar el valor de vh
 
@@ -50,22 +51,26 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <nav className="md:flex md:flex-row md:h-24 justify-between max-width items-center hidden sm:flex">
         <div className="logo">
-          <ReactSVG src={Logo} />
+          <Link to={"/"}>
+            <ReactSVG src={Logo} />
+          </Link>
         </div>
         <ul className="md:flex md:flex-row items-center">
           <li className="py-2 px-4 myPBold ">
-            <a href="#home">Nosotros</a>
+            <Link to={"/nosotros"}>Nosotros</Link>
           </li>
           <li className="py-2 px-4 myPBold ">
-            <a href="#about">Equipamiento</a>
+            <Link to={"/equipamiento"}>Equipamiento</Link>
           </li>
           <li className="py-2 px-4 myPBold ">
-            <a href="#services">Preguntas frecuentes</a>
+            <Link to={"/faqs"}>Preguntas frecuentes</Link>
           </li>
           <li className="md:h-[50px] md:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
-            <a href="/#contact" className="contact-button myCTA text-white">
+            {/* <a href="/#contact" > */}
+            <Link to={"/contacto"} className="contact-button myCTA text-white">
               Contacto
-            </a>
+            </Link>
+            {/* </a> */}
           </li>
         </ul>
       </nav>
@@ -77,13 +82,15 @@ const Navbar = () => {
         }`}
       >
         <div className="logo">
-          <ReactSVG
-            src={LogoDoble}
-            beforeInjection={(svg) => {
-              svg.setAttribute("style", `fill: ${colorLogo};`);
-            }}
-            className="logo"
-          />
+          <Link to={"/"}>
+            <ReactSVG
+              src={LogoDoble}
+              beforeInjection={(svg) => {
+                svg.setAttribute("style", `fill: ${colorLogo};`);
+              }}
+              className="logo"
+            />
+          </Link>
         </div>
         <button
           className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
@@ -98,24 +105,24 @@ const Navbar = () => {
           <>
             <ul className="absolute h-[100vh] top-20 left-0 w-full bg-iDBlue shadow-md flex flex-col items-start space-y-2 transition-all duration-300 pt-7">
               <li className="py-2 pl-6 myH2 text-white">
-                <a href="#contact" onClick={toggleMobileMenu}>
+                <Link to={"/contacto"} onClick={toggleMobileMenu}>
                   Contacto
-                </a>
+                </Link>
               </li>
               <li className="py-2 pl-6 myH2 text-white">
-                <a href="#home" onClick={toggleMobileMenu}>
+                <Link to={"/nosotros"} onClick={toggleMobileMenu}>
                   Nosotros
-                </a>
+                </Link>
               </li>
               <li className="py-2 pl-6 myH2 text-white">
-                <a href="#about" onClick={toggleMobileMenu}>
+                <Link to={"/equipamiento"} onClick={toggleMobileMenu}>
                   Equipamiento
-                </a>
+                </Link>
               </li>
               <li className="py-2 pl-6 myH2 text-white">
-                <a href="#services" onClick={toggleMobileMenu}>
+                <Link to={"/faqs"} onClick={toggleMobileMenu}>
                   Preguntas frecuentes
-                </a>
+                </Link>
               </li>
               <div className="absolute" style={{ top: `${vh}px` }}>
                 <li className="pl-6 text-[#8D9098]">
