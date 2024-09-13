@@ -8,6 +8,7 @@ import WhyUs from "./Components/WhyUs";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import Nosotros from "./Pages/Nosotros";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<Nosotros />} />
       </Routes>
       <Footer />
     </BrowserRouter>

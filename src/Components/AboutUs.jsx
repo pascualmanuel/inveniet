@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 import Beepannel from "../assets/icons/beepanel.svg";
+import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <>
@@ -15,8 +16,8 @@ const AboutUs = () => {
               judiciales.
             </p>
             <div className=" h-[50px] w-[192px] flex justify-center items-center bg-[#f4f7fa1a] rounded-lg">
-              <a
-                href="/#contact"
+              <Link
+                to={"/nosotros"}
                 className="contact-button myCTA text-white flex flex-row items-center"
               >
                 <span className="mr-[10px] text-white">Sobre nosotros</span>
@@ -42,7 +43,7 @@ const AboutUs = () => {
                     strokeLinejoin="bevel"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
 

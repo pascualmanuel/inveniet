@@ -139,6 +139,17 @@
   align-items: center;
 }
 
+.nosotros-bg {
+  background-image: url("./assets/about_us.png");
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(
+    87.91deg,
+    #161c2d -39.09%,
+    rgba(22, 28, 45, 0) 97.71%
+  );
+}
+
 @media (min-width: 390px) {
   .logo-section {
     gap: 16px;
