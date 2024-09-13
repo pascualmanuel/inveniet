@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
+      <div className="lines-bg h-[80px] lg:h-[153px] "></div>
       <div className="bg-iGrey  w-[100vw]">
         <div className="center max-w-[570px] lg:max-w-[1360px]">
           <div className="pt-10 lg:pt-20 pb-7 mb-7 border-b border-iGrey3 lg:flex lg:flex-row lg:justify-between">

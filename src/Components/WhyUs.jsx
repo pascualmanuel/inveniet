@@ -31,7 +31,7 @@ const WhyUs = () => {
 
   return (
     <>
-      <div className="pb-[125px] lines-bg">
+      <div className="">
         <div className="flex justify-center pt-10 pb-[32px]">
           <h2 className="myH2">¿Por qué Inveniet?</h2>
         </div>
@@ -41,7 +41,7 @@ const WhyUs = () => {
             Algunas de nuestras implementaciones
           </h2>
         </div>
-        <div className="flex justify-center lg:mb-[70px]">
+        <div className="flex justify-center mb-[50px] lg:mb-[40px]">
           <div className="logo-section">
             {logos.map((logo, index) => (
               <img
