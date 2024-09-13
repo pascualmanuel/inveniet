@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 import Logo from "../assets/logo/InvenietLogoBlack.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -16,10 +17,18 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <li className="myPBold">Contacto</li>
-              <li className="myPBold my-1.5">Preguntas frecuentes</li>
-              <li className="myPBold">Equipamiento</li>
-              <li className="myPBold mt-1.5 mb-8">Nosotros</li>
+              <Link to={"/contacto"}>
+                <li className="myPBold">Contacto</li>
+              </Link>
+              <Link to={"/faq"}>
+                <li className="myPBold my-1.5">Preguntas frecuentes</li>
+              </Link>
+              <Link to={"/equipamiento"}>
+                <li className="myPBold">Equipamiento</li>
+              </Link>
+              <Link to={"/nosotros"}>
+                <li className="myPBold mt-1.5 mb-8">Nosotros</li>
+              </Link>
             </div>
             <div className="w-[210px]">
               <li className="myP2">
@@ -28,8 +37,12 @@ const Footer = () => {
               <li className=" myP2 my-1.5 lg:my-4">
                 Lunes - Viernes: 8 am - 6 pm
               </li>
-              <li className=" myP2">contacto@inveniet.com</li>
-              <li className=" myP2 mt-1.5 lg:mt-4">(+52) 5555 147914</li>
+              <li className=" myP2">
+                <a href="mailto:contacto@inveniet.com">contacto@inveniet.com</a>
+              </li>
+              <li className=" myP2 mt-1.5 lg:mt-4">
+                <a href="tel:+5491152523301">(+54 11) 5252-3301</a>
+              </li>
             </div>
           </div>
           <p className="myP3 pb-10 text-center">
