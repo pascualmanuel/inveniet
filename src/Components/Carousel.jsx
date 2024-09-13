@@ -1,11 +1,11 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import CheckIcon from "../assets/icons/Check.svg";
 import "swiper/css"; // Core Swiper styles
 import { ReactSVG } from "react-svg";
 import "swiper/css/pagination";
-
 const data = [
   {
     title: "Fácil de usar",
@@ -58,26 +58,57 @@ const data = [
 ];
 
 function Carousel() {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
+  // Function to update the state based on window width
+  const updateMedia = () => {
+    setIsDesktop(window.innerWidth >= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  }, []);
+
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-      spaceBetween={8} // Margin between boxes
-      slidesPerView="auto" // Allows the display of partial boxes
-      centeredSlides={false} // Aligns the first box to the left
-      pagination={{ clickable: true }}
-      // autoplay={true}
-      // loop={true}
-    >
-      {data.map((item, index) => (
-        <SwiperSlide key={index} className="carousel-box ">
-          <div className="flex flex-row items-center mb-[16px] ">
-            <ReactSVG src={CheckIcon} />{" "}
-            <h3 className="myCTA  ml-2">{item.title}</h3>
+    <>
+      {!isDesktop && (
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={8} // Margin between boxes
+          slidesPerView="auto" // Allows the display of partial boxes
+          centeredSlides={false} // Aligns the first box to the left
+          pagination={{ clickable: true }}
+          // autoplay={true}
+          // loop={true}
+        >
+          {data.map((item, index) => (
+            <SwiperSlide key={index} className="carousel-box ">
+              <div className="flex flex-row items-center mb-[16px] ">
+                <ReactSVG src={CheckIcon} />
+                <h3 className="myCTA  ml-2">{item.title}</h3>
+              </div>
+              <p className="myP">{item.text}</p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
+      {isDesktop && (
+        <>
+          <div className="flex flex-row flex-wrap justify-center gap-[30px] center max-w-[1400px]">
+            {data.map((item, index) => (
+              <div key={index} className="carousel-box flex">
+                <div className="flex flex-row items-center mb-[16px] ">
+                  <ReactSVG src={CheckIcon} />
+                  <h3 className="myCTA  ml-2">{item.title}</h3>
+                </div>
+                <p className="myP">{item.text}</p>
+              </div>
+            ))}
           </div>
-          <p className="myP">{item.text}</p>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+        </>
+      )}
+    </>
   );
 }
 

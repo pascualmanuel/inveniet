@@ -36,12 +36,12 @@ const WhyUs = () => {
           <h2 className="myH2">¿Por qué Inveniet?</h2>
         </div>
         <Carousel />
-        <div className="flex justify-center pt-[80px] pb-[60px]">
+        <div className="flex justify-center pt-[80px] pb-[60px] lg:pt-[170px]">
           <h2 className="myH2 text-center">
             Algunas de nuestras implementaciones
           </h2>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center lg:mb-[70px]">
           <div className="logo-section">
             {logos.map((logo, index) => (
               <img

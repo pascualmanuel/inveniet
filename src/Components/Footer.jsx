@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-iGrey  w-[100vw] ">
-        <div className="center max-w-[570px] ">
+        <div className="center max-w-[570px] lg:max-w-[1360px]">
           <div className="pt-10 pb-7 mb-7 border-b border-iGrey3 ">
             <ReactSVG className="mb-6" src={Logo} />
             <p className="mb-8">

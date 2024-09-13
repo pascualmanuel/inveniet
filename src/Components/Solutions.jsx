@@ -4,6 +4,7 @@ import Icon2 from "../assets/icons/icon-2.svg";
 import Icon3 from "../assets/icons/icon-3.svg";
 import Icon4 from "../assets/icons/icon-4.svg";
 import { ReactSVG } from "react-svg";
+
 const Solutions = () => {
   const data = [
     {
@@ -38,7 +39,7 @@ const Solutions = () => {
             </p>
           </div>
           <div>
-            <div className="box-grid pb-[40px]">
+            <div className="box-grid pb-[40px] lg:pb-[100px]">
               {data.map((item, index) => (
                 <div className="box" key={index}>
                   <ReactSVG className="icon" src={item?.icon} />

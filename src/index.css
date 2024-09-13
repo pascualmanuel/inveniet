@@ -52,11 +52,7 @@
   padding: 16px;
   box-sizing: border-box;
   transition: margin 0.3s ease;
-}
-
-.carousel-box {
   margin: 0 0 8px 0;
-  font-size: 18px;
 }
 
 .swiper-pagination {
@@ -172,5 +168,13 @@
     background: url("./assets/icons/bg-lines.svg");
     background-position: bottom;
     background-repeat: repeat-x;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-box {
+    width: 314px !important;
+    height: 135px !important;
+    margin: 0;
   }
 }
