@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Nosotros from "./Pages/Nosotros";
+import Equipamiento from "./Pages/Equipamiento";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/equipamiento" element={<Equipamiento />} />
       </Routes>
       <Footer />
     </BrowserRouter>
