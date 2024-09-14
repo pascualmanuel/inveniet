@@ -6,23 +6,68 @@ import Eq3 from "../assets/eq-3.png";
 const Equipamiento = () => {
   return (
     <>
-      <div className="w-screen h-[250px] equipment-bg lg:h-[350px] relative z-[-1]">
-        <p className="myH1 absolute text-white top-[130px]  lg:top-[190px] left-[25px] lg:left-[80px]">
-          Equipamiento
-        </p>
+      <div className="w-screen h-[250px] equipment-bg lg:h-[350px] z-[-1] flex items-center">
+        <div className="center max-width w-[100vw] ">
+          <p className="myH1 text-white  lg: pt-12 lg:pt-24">Equipamiento</p>
+        </div>
       </div>
-      <div>
-        <div>
-          <p className="labels text-iLBlue">MICRÓFONOS CUELLO DE GANSO</p>
-          <h3 className="myH2">Claridad y precisión en cada declaración</h3>
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-between lg:mt-20 max-width center">
+        <div className="lg:w-[50%]">
+          <p className="labels text-iLBlue mt-8">MICRÓFONOS CUELLO DE GANSO</p>
+          <h3 className="myH2 my-2">
+            Claridad y precisión en cada declaración
+          </h3>
           <p className="subH">
-            Nuestros micrófonos cuello de ganso capturan el sonido con una
-            nitidez excepcional, asegurando que cada declaración sea registrada
-            con la máxima claridad.
+            Utilizamos micrófonos cuello de ganso de calidad profesional, para
+            registrar cada declaración con máxima claridad
           </p>
         </div>
-        <div className="eqbg-1">
-          {/* <img src={Eq1} className="w-[440px] center" /> */}
+        <div className="flex justify-center lg:w-[30%]">
+          <img
+            src={Eq1}
+            className="w-[440px] lg:w-[625px] max-w-none"
+            alt="image"
+          />
+        </div>
+      </div>
+
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-between lg:mt-20 max-width center flex flex-col-reverse">
+        <div className="flex justify-center lg:w-[30%]">
+          <img
+            src={Eq2}
+            className="w-[440px] lg:w-[625px] max-w-none"
+            alt="image"
+          />
+        </div>
+        <div className="lg:w-[50%]">
+          <p className="labels text-iLBlue mt-8">PROCESADOR DIGITAL DE AUDIO</p>
+          <h3 className="myH2 my-2">
+            Gestioná todos los canales de audio con un solo dispositivo
+          </h3>
+          <p className="subH">
+            Desarrollamos procesadores digitales de audio especificamente para
+            este tipo de instalaciones, que permiten integrar y mezclar el audio
+            reduciendo ruidos e interferencias
+          </p>
+        </div>
+      </div>
+
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-between lg:mt-20 max-width center">
+        <div className="lg:w-[50%]">
+          <p className="labels text-iLBlue mt-8">CAMARAS IP</p>
+          <h3 className="myH2 my-2">Alta definición de imagen</h3>
+          <p className="subH">
+            Nuestras cámaras IP capturan cada momento en altísima calidad, con
+            grabación en formato MP4 para asegurar claridad visual en cada
+            archivo.
+          </p>
+        </div>
+        <div className="flex justify-center lg:w-[30%]">
+          <img
+            src={Eq3}
+            className="w-[440px] lg:w-[625px] max-w-none"
+            alt="image"
+          />
         </div>
       </div>
     </>

@@ -48,13 +48,13 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="md:flex md:flex-row md:h-24 justify-between max-width items-center hidden sm:flex center">
+      <nav className="lg:flex lg:flex-row lg:h-24 justify-between max-width items-center hidden center">
         <div className="logo">
           <Link to={"/"}>
             <ReactSVG src={Logo} />
           </Link>
         </div>
-        <ul className="md:flex md:flex-row items-center">
+        <ul className="lg:flex lg:flex-row items-center">
           <li className="py-2 px-4 myPBold ">
             <Link to={"/nosotros"}>Nosotros</Link>
           </li>
@@ -64,7 +64,7 @@ const Navbar = () => {
           <li className="py-2 px-4 myPBold ">
             <Link to={"/faqs"}>Preguntas frecuentes</Link>
           </li>
-          <li className="md:h-[50px] md:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
+          <li className="lg:h-[50px] lg:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
             {/* <a href="/#contact" > */}
             <Link to={"/contacto"} className="contact-button myCTA text-white">
               Contacto
@@ -76,7 +76,7 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <nav
-        className={`flex justify-between items-center h-20 px-6 sm:hidden ${
+        className={`flex justify-between items-center h-20 px-6 lg:hidden ${
           isMobileMenuOpen ? "nav-open" : ""
         }`}
       >

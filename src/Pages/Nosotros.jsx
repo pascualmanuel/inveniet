@@ -8,7 +8,9 @@ const Nosotros = () => {
   return (
     <>
       <div className="w-screen h-[250px] nosotros-bg lg:h-[350px] z-[-1] flex items-center">
-        <p className="myH1 text-white pl-6 lg:pl-20 pt-12 lg:pt-24">Nosotros</p>
+        <div className="center max-width w-[100vw] ">
+          <p className="myH1 text-white  lg: pt-12 lg:pt-24">Nosotros</p>
+        </div>
       </div>
       <div className="max-width center" style={{ marginBottom: "80px" }}>
         <div className="lg:max-w-[1077px]">

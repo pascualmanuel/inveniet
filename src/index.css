@@ -161,7 +161,7 @@
   background-size: cover;
   background-size: 200%;
 }
-
+/* 
 .eqbg-1 {
   background-image: url("./assets/eq-1.png");
   height: 200px;
@@ -169,7 +169,7 @@
   background-position: center;
   background-size: contain;
   max-width: 435px;
-}
+} */
 
 @media (min-width: 390px) {
   .logo-section {
