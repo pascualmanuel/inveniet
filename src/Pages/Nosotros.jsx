@@ -4,7 +4,7 @@ const Nosotros = () => {
   return (
     <>
       <div className="w-screen h-[250px] nosotros-bg lg:h-[350px] relative z-[-1]">
-        <p className="myH1 absolute text-white top-[190px] left-[25px] lg:left-[80px]">
+        <p className="myH1 absolute text-white top-[130px]  lg:top-[190px]   left-[25px] lg:left-[80px]">
           Nosotros
         </p>
       </div>
