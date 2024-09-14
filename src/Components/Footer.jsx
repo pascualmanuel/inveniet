@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="lines-bg h-[80px] lg:h-[153px] "></div>
       <div className="bg-iGrey  w-[100vw]">
-        <div className="center max-w-[570px] lg:max-w-[1360px]">
+        <div className="center max-width ]">
           <div className="pt-10 lg:pt-20 pb-7 mb-7 border-b border-iGrey3 lg:flex lg:flex-row lg:justify-between">
             <div className="lg:w-1/2">
               <ReactSVG className="mb-6" src={Logo} />

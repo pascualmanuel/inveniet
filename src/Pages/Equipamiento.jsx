@@ -1,4 +1,7 @@
 import React from "react";
+import Eq1 from "../assets/eq-1.png";
+import Eq2 from "../assets/eq-2.png";
+import Eq3 from "../assets/eq-3.png";
 
 const Equipamiento = () => {
   return (
@@ -18,8 +21,8 @@ const Equipamiento = () => {
             con la máxima claridad.
           </p>
         </div>
-        <div>
-          <img />
+        <div className="eqbg-1">
+          {/* <img src={Eq1} className="w-[440px] center" /> */}
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="bg-iDBlue  w-[100vw]">
-        <div className="center max-w-[570px] lg:max-w-[1360px] lg:flex lg:items-center">
+        <div className="center max-width lg:flex lg:items-center">
           <div className="pt-[40px] pb-8">
             <h2 className="text-white myH2 mb-2">
               El futuro de los procesos judiciales orales

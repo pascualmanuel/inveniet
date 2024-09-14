@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="max-w-[570px] center lg:max-w-[1360px] lg:flex lg:flex-row lg:items-center lg:justify-between lg:">
+      <div className=" center max-width lg:flex lg:flex-row lg:items-center lg:justify-between lg:">
         <div className="flex flex-col  mb-[25px] lg:w-[52%]">
           <h1 className="myH1 mb-[16px] mt-[30px]">
             Tecnología para modernizar la justicia

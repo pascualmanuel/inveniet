@@ -16,7 +16,6 @@ const Navbar = () => {
 
       // Guarda el valor en el estado
       setVh(newVh);
-      console.log(newVh, "gfs");
     };
 
     // Configura el tamaño al cargar la página
@@ -49,7 +48,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="md:flex md:flex-row md:h-24 justify-between max-width items-center hidden sm:flex">
+      <nav className="md:flex md:flex-row md:h-24 justify-between max-width items-center hidden sm:flex center">
         <div className="logo">
           <Link to={"/"}>
             <ReactSVG src={Logo} />

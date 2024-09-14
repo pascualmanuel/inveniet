@@ -4,8 +4,12 @@
 
 .max-width {
   max-width: 1360px;
-  margin: 0 auto; /* Centers the element horizontally */
-  padding: 0 1rem; /* Optional: Add padding to prevent content from touching the edges */
+}
+
+@media (max-width: 768px) {
+  .max-width {
+    max-width: 550px;
+  }
 }
 .center {
   margin: 0 auto; /* Centers the element horizontally */
