@@ -5,9 +5,9 @@ const Contacto = () => {
   return (
     <>
       <div className="flex justify-center mt-12">
-        <div className="flex items-center  max-w-[1248px] w-screen  justify-between ">
+        <div className="flex items-center  max-w-[1248px] w-screen lg:justify-around  xl:justify-between ">
           <div>
-            <div className="h-[560px] w-[430px] bg-iDBlue rounded-lg flex flex-col justify-center px-[40px]">
+            <div className="left-contact h-[560px] lg:w-[390px] xl:w-[430px] bg-iDBlue rounded-lg flex flex-col justify-center px-[40px]">
               <h3 className="myH2 text-white mb-12">Contactanos</h3>
               <li className="subH text-white">
                 11 de septiembre 4717, 4° Piso, CABA, Buenos Aires, Argentina

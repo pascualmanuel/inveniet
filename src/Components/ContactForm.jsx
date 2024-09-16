@@ -23,7 +23,8 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="contact-page">
+      {/* max-width: 750px; 600 */}
+      <div className="contact-page lg:max-w-[600px] xl:max-w-[750px]">
         <form onSubmit={handleSubmit} className="contact-form">
           <label for="fname">Nombre:*</label>
           <input
