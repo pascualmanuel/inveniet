@@ -215,7 +215,7 @@
 }
 
 .faq-header:hover .faq-right {
-  /* transform: rotate(90deg); Optional hover effect */
+  transform: rotate(90deg);
 }
 
 .faq-answer {
@@ -231,19 +231,15 @@
   padding: 10px 0;
 }
 
-
 /* Contact.css */
 
 .contact-page {
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
+  padding: 56px 62px;
+  background: #ffffff;
+  box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
 }
 
 .contact-form {
@@ -255,7 +251,7 @@ h1 {
   width: 100%;
   height: 55px;
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #8d9098;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 16px;
@@ -264,12 +260,12 @@ h1 {
 }
 
 .form-field:focus {
-  border-bottom-color: #0057BE;
+  border-bottom-color: #021e5f;
 }
 
 .message-field {
   height: auto;
-  min-height: 150px;
+  min-height: 55px;
 }
 
 .contact-row {
@@ -284,14 +280,14 @@ h1 {
 .submit-button {
   width: 150px;
   height: 45px;
-  background-color: #0057BE;
+  background-color: #021e5f;
   color: white;
   font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 .submit-button:hover {
@@ -312,10 +308,6 @@ h1 {
     width: 100%; /* Full width for all fields on mobile */
   }
 }
-
-
-
-
 
 @media (min-width: 390px) {
   .logo-section {

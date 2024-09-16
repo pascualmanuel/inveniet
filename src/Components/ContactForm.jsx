@@ -25,50 +25,61 @@ const ContactForm = () => {
     <>
       <div className="contact-page">
         <form onSubmit={handleSubmit} className="contact-form">
+          <label for="fname">Nombre:*</label>
           <input
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
             placeholder="Name"
-            className="form-field"
+            className="form-field myP"
             required
           />
           <div className="contact-row">
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Email"
-              className="form-field"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              value={form.phone}
-              onChange={handleChange}
-              placeholder="Phone"
-              className="form-field"
-              required
-            />
+            <div>
+              <label for="fname">Email:*</label>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="Email"
+                className="form-field myP"
+                required
+              />
+            </div>
+            <div>
+              <label for="fname">Télefono:*</label>
+              <input
+                type="tel"
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
+                placeholder="Phone"
+                className="form-field myP"
+                required
+              />
+            </div>
           </div>
+          <label for="fname">Asunto:</label>
+
           <input
             type="text"
             name="subject"
             value={form.subject}
             onChange={handleChange}
             placeholder="Subject"
-            className="form-field"
+            className="form-field myP"
             required
           />
+          <label for="fname">Mensaje:</label>
+
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
             placeholder="Message"
-            className="form-field message-field"
+            className="form-field myP message-field"
             required
           />
           <button type="submit" className="submit-button">
