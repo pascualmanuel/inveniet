@@ -6,7 +6,7 @@ const FAQItem = ({ number, title, answer }) => {
   const answerRef = useRef(null); // Reference to the answer div
 
   return (
-    <div className="faq-item" onClick={() => setIsOpen(!isOpen)}>
+    <div className="faq-item select-none" onClick={() => setIsOpen(!isOpen)}>
       <div className="faq-header">
         <div className="faq-left">
           <div className="faq-number subH">{number}</div>
@@ -116,7 +116,7 @@ const FAQPage = () => {
 
   return (
     <div className="faq-page max-width center">
-      <h2 className="myH1 py-20">Preguntas frecuentes</h2>
+      <h2 className="myH1 sm:py-20 py-5">Preguntas frecuentes</h2>
       {faqData.map((faq) => (
         <FAQItem
           key={faq.number}
