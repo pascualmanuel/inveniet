@@ -161,15 +161,75 @@
   background-size: cover;
   background-size: 200%;
 }
-/* 
-.eqbg-1 {
-  background-image: url("./assets/eq-1.png");
-  height: 200px;
-  width: 100%;
-  background-position: center;
-  background-size: contain;
-  max-width: 435px;
-} */
+
+/* FAQ.css */
+
+.faq-page {
+  /* max-width: 1360px; */
+  /* margin: 0 auto; */
+  /* padding: 60px; */
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 16px 24px 16px 24px;
+  cursor: pointer;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-left {
+  display: flex;
+  align-items: center;
+}
+
+.faq-number {
+  width: 45px;
+  height: 45px;
+  color: #0057be;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 14px;
+  border: #0057be solid 1px;
+}
+
+.faq-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.faq-right {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.faq-header:hover .faq-right {
+  /* transform: rotate(90deg); Optional hover effect */
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s ease; /* Smooth open/close effect */
+}
+
+.faq-answer-content {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 0;
+}
 
 @media (min-width: 390px) {
   .logo-section {
