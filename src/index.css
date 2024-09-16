@@ -294,7 +294,7 @@
 }
 
 /* Media Query for Mobile Layout */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .contact-row {
     flex-direction: column;
   }
