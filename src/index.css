@@ -231,6 +231,92 @@
   padding: 10px 0;
 }
 
+
+/* Contact.css */
+
+.contact-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-field:focus {
+  border-bottom-color: #0057BE;
+}
+
+.message-field {
+  height: auto;
+  min-height: 150px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-row .form-field {
+  width: 275px; /* For desktop, email and phone each take 275px */
+}
+
+.submit-button {
+  width: 150px;
+  height: 45px;
+  background-color: #0057BE;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: #003f8a;
+}
+
+/* Media Query for Mobile Layout */
+@media screen and (max-width: 768px) {
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-row .form-field {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .form-field {
+    width: 100%; /* Full width for all fields on mobile */
+  }
+}
+
+
+
+
+
 @media (min-width: 390px) {
   .logo-section {
     gap: 16px;
