@@ -13,6 +13,7 @@ import Equipamiento from "./Pages/Equipamiento";
 import FAQPage from "./Pages/Faq";
 import ContactForm from "./Components/ContactForm";
 import Contacto from "./Pages/Contact";
+import Demo from "./Pages/Demo";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/equipamiento" element={<Equipamiento />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/demo" element={<Demo />} />
       </Routes>
       <Footer />
     </BrowserRouter>

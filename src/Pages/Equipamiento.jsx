@@ -110,8 +110,12 @@ const Equipamiento = () => {
             Diagrama de instalación
           </p>
           <h3 className="myH2 my-4">Sala de audiencias</h3>
-          <img src={Eq5} className=" max-w-full block lg:hidden" alt="image" />
-          <p className="subH my-4">
+          <img
+            src={Eq5}
+            className=" max-w-full block lg:hidden md:max-w-[70%] md:my-0 md:mx-auto"
+            alt="image"
+          />
+          <p className=" my-4">
             Este diagrama muestra nuestra solución integrada de audio y video
             para salas de audiencias. Con un procesador digital central,
             micrófonos, cámaras y conexiones IP, gestionamos de forma eficiente
@@ -129,15 +133,23 @@ const Equipamiento = () => {
 
       <div className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:my-20 max-width center flex flex-col-reverse">
         <div className="flex justify-center lg:w-[40%]">
-          <img src={Eq6} className=" max-w-full hidden lg:block" alt="image" />
+          <img
+            src={Eq6}
+            className=" max-w-full  hidden lg:block "
+            alt="image"
+          />
         </div>
         <div className="lg:w-[50%]">
           <p className="mt-8 h-[42px] w-[256px] subH flex justify-center items-center bg-iGrey rounded-lg">
             Diagrama de instalación
           </p>
           <h3 className="myH2 my-4">Cámara Gessel</h3>
-          <img src={Eq6} className=" max-w-full block lg:hidden" alt="image" />
-          <p className="subH my-4">
+          <img
+            src={Eq6}
+            className=" max-w-full block lg:hidden md:max-w-[70%] md:my-0 md:mx-auto"
+            alt="image"
+          />
+          <p className=" my-4">
             Este diagrama ilustra nuestra solución audiovisual integrada para
             Cámaras Gesell. El sistema permite la captura y gestión eficiente de
             audio y video mediante micrófonos ambientales, cámaras domo y un
