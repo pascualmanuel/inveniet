@@ -2,6 +2,7 @@ import React from "react";
 import Eq1 from "../assets/eq-1.png";
 import Eq2 from "../assets/eq-2.png";
 import Eq3 from "../assets/eq-3.png";
+import Eq4 from "../assets/equipment-fiscalia.jpg";
 
 const Equipamiento = () => {
   return (
@@ -68,6 +69,18 @@ const Equipamiento = () => {
             className="w-[440px] lg:w-[625px] max-w-none"
             alt="image"
           />
+        </div>
+      </div>
+      <div className="bg-iGrey py-16">
+        <div className="max-width mx-6 equ-fisc rounded-lg "></div>
+        <div className="max-width center">
+          <h3 className="myH2 my-4">Servicio de instalación</h3>
+          <p className="myP subH">
+            Implementamos y configuramos todo el equipamiento necesario para que
+            tu sistema Inveniet esté listo para funcionar y estamos disponibles
+            para resolver cualquier duda o inconveniente, garantizando un
+            funcionamiento óptimo y continuo.
+          </p>
         </div>
       </div>
     </>
