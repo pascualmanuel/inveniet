@@ -17,13 +17,13 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
+    // Agregar mailing.
     console.log(form);
   };
 
   return (
     <>
-      <div className="contact-page ">
+      <div className="contact-page py-8 px-4 md:py-14 md:px-[62px]">
         <form onSubmit={handleSubmit} className="contact-form">
           <label for="fname">Nombre:*</label>
           <input
