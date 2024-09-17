@@ -62,7 +62,7 @@ const Navbar = () => {
             <Link to={"/equipamiento"}>Equipamiento</Link>
           </li>
           <li className="py-2 px-4 myPBold ">
-            <Link to={"/faqs"}>Preguntas frecuentes</Link>
+            <Link to={"/faq"}>Preguntas frecuentes</Link>
           </li>
           <li className="lg:h-[50px] lg:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
             {/* <a href="/#contact" > */}
@@ -119,7 +119,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="py-2 pl-6 myH2 text-white">
-                <Link to={"/faqs"} onClick={toggleMobileMenu}>
+                <Link to={"/faq"} onClick={toggleMobileMenu}>
                   Preguntas frecuentes
                 </Link>
               </li>

@@ -19,7 +19,7 @@ const Hero = () => {
               </div>
             </Link>
 
-            <Link to={"/contact"}>
+            <Link to={"/contacto"}>
               <div className=" myCTA h-[50px] w-[125px] flex justify-center items-center bg-white rounded-lg ml-[8px] border border-iBlue ">
                 Contacto
               </div>
