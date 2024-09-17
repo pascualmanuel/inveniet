@@ -23,8 +23,7 @@ const ContactForm = () => {
 
   return (
     <>
-      {/* max-width: 750px; 600 */}
-      <div className="contact-page md:max-w-[390px] lg:max-w-[600px] xl:max-w-[750px]">
+      <div className="contact-page ">
         <form onSubmit={handleSubmit} className="contact-form">
           <label for="fname">Nombre:*</label>
           <input
@@ -32,12 +31,12 @@ const ContactForm = () => {
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder="Name"
+            placeholder="Nombre"
             className="form-field myP"
             required
           />
-          <div className="contact-row">
-            <div>
+          <div className=" flex flex-col lg:flex lg:flex-row lg:justify-between">
+            <div className="">
               <label for="fname">Email:*</label>
               <input
                 type="email"
@@ -56,7 +55,7 @@ const ContactForm = () => {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="Phone"
+                placeholder="Télefono"
                 className="form-field myP"
                 required
               />
@@ -69,7 +68,7 @@ const ContactForm = () => {
             name="subject"
             value={form.subject}
             onChange={handleChange}
-            placeholder="Subject"
+            placeholder="Asunto"
             className="form-field myP"
             required
           />
@@ -79,12 +78,15 @@ const ContactForm = () => {
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder="Message"
+            placeholder="Mensaje"
             className="form-field myP message-field"
             required
           />
-          <button type="submit" className="submit-button">
-            Submit
+          <button
+            type="submit"
+            className="w-full h-[50px] md:w-[148px] flex justify-center items-center bg-iBlue rounded-lg text-white myCTA self-end mt-2"
+          >
+            Enviar
           </button>
         </form>
       </div>
