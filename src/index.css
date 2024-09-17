@@ -310,6 +310,14 @@
     background-position: left 70%;
     background-size: 120%;
   }
+  .equ-fisc {
+    height: 180px;
+  }
+}
+@media (min-width: 768px) {
+  .equ-fisc {
+    height: 140px;
+  }
 }
 @media (min-width: 1180px) {
   .logo-section {
