@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Eq1 from "../assets/eq-1.png";
 import Eq2 from "../assets/eq-2.png";
 import Eq3 from "../assets/eq-3.png";
 import Eq4 from "../assets/equipment-fiscalia.jpg";
+import Eq5 from "../assets/sa-1.png";
+import Eq6 from "../assets/cg-1.png";
 
 const Equipamiento = () => {
   return (
@@ -99,23 +102,55 @@ const Equipamiento = () => {
       </div>
 
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-between lg:my-20 max-width center flex flex-col-reverse">
-        <div className="flex justify-center lg:w-[30%]">
-          <img
-            src={Eq2}
-            className="w-[440px] lg:w-[625px] max-w-none"
-            alt="image"
-          />
+        <div className="flex justify-center lg:w-[40%]">
+          <img src={Eq5} className=" max-w-full hidden lg:block" alt="image" />
         </div>
         <div className="lg:w-[50%]">
-          <p className="labels text-iLBlue mt-8">PROCESADOR DIGITAL DE AUDIO</p>
-          <h3 className="myH2 my-2">
-            Gestioná todos los canales de audio con un solo dispositivo
-          </h3>
-          <p className="subH">
-            Desarrollamos procesadores digitales de audio especificamente para
-            este tipo de instalaciones, que permiten integrar y mezclar el audio
-            reduciendo ruidos e interferencias
+          <p className="mt-8 h-[42px] w-[256px] subH flex justify-center items-center bg-iGrey rounded-lg">
+            Diagrama de instalación
           </p>
+          <h3 className="myH2 my-4">Sala de audiencias</h3>
+          <img src={Eq5} className=" max-w-full block lg:hidden" alt="image" />
+          <p className="subH my-4">
+            Este diagrama muestra nuestra solución integrada de audio y video
+            para salas de audiencias. Con un procesador digital central,
+            micrófonos, cámaras y conexiones IP, gestionamos de forma eficiente
+            la captura, mezcla y almacenamiento de todos los registros
+            audiovisuales. Nuestro equipo se encarga de la instalación completa,
+            asegurando una experiencia fluida y profesional.
+          </p>
+          <Link to={"/demo"}>
+            <div className=" h-[50px] w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
+              Solicitar demo
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:my-20 max-width center flex flex-col-reverse">
+        <div className="flex justify-center lg:w-[40%]">
+          <img src={Eq6} className=" max-w-full hidden lg:block" alt="image" />
+        </div>
+        <div className="lg:w-[50%]">
+          <p className="mt-8 h-[42px] w-[256px] subH flex justify-center items-center bg-iGrey rounded-lg">
+            Diagrama de instalación
+          </p>
+          <h3 className="myH2 my-4">Cámara Gessel</h3>
+          <img src={Eq6} className=" max-w-full block lg:hidden" alt="image" />
+          <p className="subH my-4">
+            Este diagrama ilustra nuestra solución audiovisual integrada para
+            Cámaras Gesell. El sistema permite la captura y gestión eficiente de
+            audio y video mediante micrófonos ambientales, cámaras domo y un
+            procesador digital central. Todo se conecta a través de una red IP,
+            con almacenamiento en DVR y monitoreo en tiempo real desde la sala
+            de control. Nuestro equipo se encarga de la instalación completa
+            para asegurar un funcionamiento impecable.
+          </p>
+          <Link to={"/demo"}>
+            <div className=" h-[50px] w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
+              Solicitar demo
+            </div>
+          </Link>
         </div>
       </div>
     </>

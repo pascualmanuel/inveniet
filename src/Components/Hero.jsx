@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <>
@@ -13,16 +13,17 @@ const Hero = () => {
             audiovisual, y gestión de procesos judiciales orales.
           </p>
           <div className="flex flex-row items-start">
-            <div className=" h-[50px] w-[165px] flex justify-center items-center bg-iBlue rounded-lg">
-              <a href="/#contact" className="contact-button myCTA text-white">
+            <Link to={"/demo"}>
+              <div className=" h-[50px] w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
                 Solicitar demo
-              </a>
-            </div>
-            <div className=" h-[50px] w-[125px] flex justify-center items-center bg-white rounded-lg ml-[8px] border border-iBlue ">
-              <a href="/#contact" className="contact-button myCTA">
+              </div>
+            </Link>
+
+            <Link to={"/contact"}>
+              <div className=" myCTA h-[50px] w-[125px] flex justify-center items-center bg-white rounded-lg ml-[8px] border border-iBlue ">
                 Contacto
-              </a>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="hero-img-bg mb-[30px]  lg:bg-center lg:m-0 lg:w-[43%] lg:max-w-none"></div>
