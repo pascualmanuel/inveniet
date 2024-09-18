@@ -130,7 +130,7 @@ const Navbar = () => {
                 <li className="pl-6 text-[#8D9098]">
                   Lunes - Viernes: 8 am - 6 pm
                 </li>
-                <li className="pl-6 text-[#8D9098]">contacto@inveniet.com</li>
+                <li className="pl-6 text-[#8D9098]">contacto@inveniet.info</li>
                 <li className="pl-6 text-[#8D9098]">(+52) 5555 147914</li>
               </div>
             </ul>

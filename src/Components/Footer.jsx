@@ -39,7 +39,9 @@ const Footer = () => {
                 Lunes - Viernes: 8 am - 6 pm
               </li>
               <li className=" myP2">
-                <a href="mailto:contacto@inveniet.com">contacto@inveniet.com</a>
+                <a href="mailto:contacto@inveniet.info">
+                  contacto@inveniet.info
+                </a>
               </li>
               <li className=" myP2 mt-1.5 lg:mt-4">
                 <a href="tel:+5491152523301">(+54 11) 5252-3301</a>
