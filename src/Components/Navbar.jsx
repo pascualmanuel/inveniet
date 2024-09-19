@@ -31,7 +31,7 @@ const Navbar = () => {
   }, []);
 
   // Ahora puedes usar el valor de vh en cualquier parte del componente
-  console.log(vh); // Imprime el valor de vh en la consola
+  // console.log(vh); // Imprime el valor de vh en la consola
 
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [colorLogo, setColorLogo] = useState("black");
