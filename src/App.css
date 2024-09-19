@@ -6,7 +6,7 @@
   max-width: 1360px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .max-width {
     max-width: 550px;
   }
@@ -260,7 +260,16 @@ p {
   letter-spacing: -0.1px;
 }
 
-@media (max-width: 768px) {
+.lines-hero {
+  margin-top: -200px;
+}
+
+@media (max-width: 838px) {
+  .lines-hero {
+    margin-top: -140px;
+  }
+}
+@media (max-width: 767px) {
   .myH1 {
     /* H1 Mobile */
     font-size: 40px;
@@ -276,5 +285,8 @@ p {
   .subH {
     /* SubHeading - Mobile */
     font-size: 18px;
+  }
+  .lines-hero {
+    margin-top: -30px;
   }
 }

@@ -26,8 +26,9 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="hero-img-bg mb-[30px]  lg:bg-center lg:m-0 lg:w-[43%] lg:max-w-none"></div>
+        <div className="hero-img-bg mb-[30px] lg:bg-center lg:m-0 lg:w-[43%] lg:max-w-none"></div>
       </div>
+      <div className="lines-bg h-[80px] lg:h-[153px] lines-hero z-[-2] "></div>
     </>
   );
 };
