@@ -3,11 +3,19 @@ import { Link } from "react-router-dom";
 import Eq1 from "../assets/eq-1.png";
 import Eq2 from "../assets/eq-2.png";
 import Eq3 from "../assets/eq-3.png";
+import Eq33 from "../assets/eq-3-mob.png";
 import Eq4 from "../assets/equipment-fiscalia.jpg";
 import Eq5 from "../assets/sa.png";
 import Eq6 from "../assets/cg.png";
 
 const Equipamiento = () => {
+  let isNotDesktop = window.innerWidth < 1024;
+  let Img3 = Eq3;
+
+  if (isNotDesktop) {
+    Img3 = Eq33;
+  }
+
   return (
     <>
       <div className="w-screen h-[250px] equipment-bg lg:h-[350px] z-[-1] flex items-center">
@@ -68,7 +76,7 @@ const Equipamiento = () => {
         </div>
         <div className="flex justify-center lg:w-[30%]">
           <img
-            src={Eq3}
+            src={Img3}
             className="w-[440px] lg:w-[625px] max-w-none"
             alt="image"
           />
@@ -101,9 +109,9 @@ const Equipamiento = () => {
         </div>
       </div> */}
       {/*  */}
-      <div className="mx-[25px] my-[160px]">
+      <div className="mx-[25px] my-[120px] md:my-[160px]">
         <div className="bg-fiscalia center">
-          <div className="md:w-[492px] text-white ml-[60px]">
+          <div className=" md:w-[492px] text-white md:ml-[60px]">
             <h2 className="myH2">Servicio de instalación</h2>
             <p className="myP">
               Implementamos y configuramos todo el equipamiento necesario para
@@ -115,7 +123,9 @@ const Equipamiento = () => {
         </div>
       </div>
 
-      <h2 className="myH1 text-center">Diagramas de instalación técnica</h2>
+      <h2 className="myH1 text-center mb-[30px] md:mb-auto">
+        Diagramas de instalación técnica
+      </h2>
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-between lg:my-20 max-width center flex flex-col-reverse">
         <div className="flex justify-center lg:w-[40%]">
           <img src={Eq5} className=" max-w-full hidden lg:block" alt="image" />
@@ -138,16 +148,16 @@ const Equipamiento = () => {
             audiovisuales. Nuestro equipo se encarga de la instalación completa,
             asegurando una experiencia fluida y profesional.
           </p>
-          <Link to={"/demo"}>
-            <div className=" h-[50px] w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
+          <Link to={"/demo"} className="w-full">
+            <div className=" h-[50px] sm:w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
               Solicitar demo
             </div>
           </Link>
         </div>
       </div>
 
-      <div className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:my-20 max-width center flex flex-col-reverse">
-        <div className="flex justify-center lg:w-[40%]">
+      <div className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:my-20 max-width center flex flex-col-reverse ">
+        <div className="flex justify-center lg:w-[40%] mb-[50px]">
           <img
             src={Eq6}
             className=" max-w-full  hidden lg:block "
@@ -173,8 +183,8 @@ const Equipamiento = () => {
             de control. Nuestro equipo se encarga de la instalación completa
             para asegurar un funcionamiento impecable.
           </p>
-          <Link to={"/demo"}>
-            <div className=" h-[50px] w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
+          <Link to={"/demo"} className="w-full ">
+            <div className=" h-[50px] sm:w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
               Solicitar demo
             </div>
           </Link>
