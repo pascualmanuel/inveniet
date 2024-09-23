@@ -95,7 +95,7 @@ function Carousel() {
       )}
       {isDesktop && (
         <>
-          <div className="flex flex-row flex-wrap justify-center gap-[30px] center max-w-[1400px]">
+          <div className="flex flex-row flex-wrap justify-center gap-[32px] center max-w-[1400px]">
             {data.map((item, index) => (
               <div key={index} className="carousel-box-desk flex">
                 <div className="flex flex-row items-center mb-[16px] ">

@@ -8,7 +8,7 @@ const Nosotros = () => {
   return (
     <>
       <div className="w-screen h-[250px] nosotros-bg lg:h-[350px] z-[-1] flex items-center">
-        <div className="center max-width w-[100vw] ">
+        <div className="center max-w-[1360px] w-[100vw] ">
           <p className="myH1 text-white  lg: pt-12 lg:pt-24">Nosotros</p>
         </div>
       </div>

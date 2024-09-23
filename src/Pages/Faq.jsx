@@ -115,7 +115,7 @@ const FAQPage = () => {
   ];
 
   return (
-    <div className="faq-page max-width center">
+    <div className="faq-page max-w-[1360px] center">
       <h2 className="myH1 sm:py-20 py-5">Preguntas frecuentes</h2>
       {faqData.map((faq) => (
         <FAQItem

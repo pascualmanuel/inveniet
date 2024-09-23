@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import Fondo from "../assets/hero-img.png";
-import Lines from "../assets/icons/bg-lines.svg";
+import Lines from "../assets/icons/bg-lines-2.svg";
 import MailIcon from "../assets/icons/mail-icon.svg";
 import DemoIcon from "../assets/icons/demo-icon.svg";
 const Hero = () => {
@@ -20,19 +20,19 @@ const Hero = () => {
             </span>
           </p>
 
-          <div className="flex  sm:flex-row items-start">
-            <Link to={"/demo"} className="reveal-text">
+          <div className="flex flex-col  ssm:flex-row items-start">
+            <Link to={"/demo"} className="reveal-text w-full sm:w-auto">
               <span>
-                <div className=" h-[50px] w-[199px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg ">
+                <div className=" ssm:h-[50px] ssm:w-[199px] h-[47px] max-w-[450px]  myCTA text-white flex justify-center items-center bg-iBlue rounded-lg ">
                   <ReactSVG src={DemoIcon} />
                   <span className="ml-[12px]"> Solicitar demo</span>
                 </div>
               </span>
             </Link>
 
-            <Link to={"/contacto"} className="reveal-text">
+            <Link to={"/contacto"} className="reveal-text w-full sm:w-auto">
               <span>
-                <div className=" myCTA h-[50px] w-[159px] flex justify-center items-center bg-white rounded-lg ml-[8px] border border-iGrey2 ">
+                <div className=" myCTA ssm:h-[50px] ssm:w-[159px] h-[47px] max-w-[450px] flex justify-center items-center bg-white rounded-lg mt-4 ssm:mt-0 ssm:ml-[8px] border border-iGrey2 ">
                   <ReactSVG src={MailIcon} />
                   <span className="ml-[12px]"> Contacto</span>
                 </div>

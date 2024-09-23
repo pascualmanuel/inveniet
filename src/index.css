@@ -31,13 +31,13 @@
   align-self: flex-start;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 767px) {
   .box-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1170px) {
   .box-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -176,6 +176,24 @@
   background-position: left -90px;
   background-size: cover;
   background-size: 200%;
+}
+
+.bg-fiscalia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(
+      236.01deg,
+      rgba(0, 0, 0, 0.1) -12.53%,
+      #000000 126.64%
+    ),
+    url("./assets/eq-fisc.png");
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 32px;
+  max-width: 1192px;
+  height: 408px;
 }
 
 .equ-fisc {

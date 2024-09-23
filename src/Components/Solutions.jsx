@@ -39,9 +39,9 @@ const Solutions = () => {
             </p>
           </div>
           <div>
-            <div className="box-grid pb-[40px] lg:pb-[100px]">
+            <div className="box-grid pb-[40px] lg:pb-[100px] ">
               {data.map((item, index) => (
-                <div className="box" key={index}>
+                <div className="box " key={index}>
                   <ReactSVG className="icon" src={item?.icon} />
                   <h3 className="myCTA my-[16px]">{item?.title}</h3>
                   <p className="myP2 text-iGrey3">{item?.text}</p>

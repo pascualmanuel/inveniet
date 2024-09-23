@@ -8,10 +8,10 @@ const AboutUs = () => {
       <div className="bg-iDBlue  w-[100vw]">
         <div className="center max-width lg:flex lg:items-center">
           <div className="pt-[40px] pb-8">
-            <h2 className="text-white myH2 mb-2">
+            <h2 className="text-white myH2 mb-2  md:max-w-[472px]">
               El futuro de los procesos judiciales orales
             </h2>
-            <p className="subH text-iGrey3 pb-[16px] lg:w-[85%]">
+            <p className="subH text-iGrey3 pb-[16px] md:max-w-[472px] lg:w-[85%]">
               Inveniet ofrece tecnología orientada a los diferentes procesos
               judiciales.
             </p>

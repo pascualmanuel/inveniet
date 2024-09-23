@@ -14,10 +14,11 @@ import FAQPage from "./Pages/Faq";
 import ContactForm from "./Components/ContactForm";
 import Contacto from "./Pages/Contact";
 import Demo from "./Pages/Demo";
-
+import GoToTop from "./Components/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
+      <GoToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
