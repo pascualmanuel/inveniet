@@ -32,7 +32,7 @@ const WhyUs = () => {
   return (
     <>
       <div className="">
-        <div className="flex justify-center pt-10 pb-[32px]">
+        <div className="flex justify-center pt-10 pb-[32px] sm:pt-[100px] sm:pb-[80px]">
           <h2 className="myH2">¿Por qué Inveniet?</h2>
         </div>
         <Carousel />

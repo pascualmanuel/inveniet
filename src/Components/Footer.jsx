@@ -8,27 +8,48 @@ const Footer = () => {
       <div className="lines-bg h-[80px] lg:h-[153px] "></div>
       <div className="bg-iGrey  w-[100vw]">
         <div className="center max-width ]">
-          <div className="pt-10 lg:pt-20 pb-7 mb-7 border-b border-iGrey3 lg:flex lg:flex-row lg:justify-between">
+          <div className="pt-10 lg:pt-20 pb-7 mb-7 border-b border-iGrey3 md:border-none md:flex md:flex-row md:justify-between">
             <div className="lg:w-1/2">
-              <ReactSVG className="mb-6" src={Logo} />
-              <p className="mb-8">
-                Somos la solución integrada para la grabación y gestión
-                audiovisual de procesos orales judiciales, diseñada para
-                simplificar y asegurar el manejo de información legal.
+              <Link to={"/"}>
+                <ReactSVG className="mb-6" src={Logo} />
+              </Link>
+              <p className="mb-8 myP2 w-[265px]">
+                Solución para la grabación y gestión audiovisual de procesos
+                orales judiciales.
               </p>
+
+              <div className="flex flex-row items-start">
+                <Link to={"/demo"} className="">
+                  <span>
+                    <div className=" text-iGrey  h-[50px] w-[165px] myCTA  flex justify-center items-center bg-iBlue rounded-lg ">
+                      Solicitar demo
+                    </div>
+                  </span>
+                </Link>
+
+                <Link to={"/contacto"} className="">
+                  <span>
+                    <div className="myCTA h-[50px] w-[125px] flex justify-center items-center rounded-lg ml-[8px] text-[]  ">
+                      Contacto
+                    </div>
+                  </span>
+                </Link>
+              </div>
             </div>
-            <div>
+            <div className="mt-16 md:mt-0">
               <Link to={"/contacto"}>
-                <li className="myPBold">Contacto</li>
+                <li className="myPBold text-iGrey3">Contacto</li>
               </Link>
               <Link to={"/faq"}>
-                <li className="myPBold my-1.5">Preguntas frecuentes</li>
+                <li className="myPBold text-iGrey3 my-2">
+                  Preguntas frecuentes
+                </li>
               </Link>
               <Link to={"/equipamiento"}>
-                <li className="myPBold">Equipamiento</li>
+                <li className="myPBold text-iGrey3">Equipamiento</li>
               </Link>
               <Link to={"/nosotros"}>
-                <li className="myPBold mt-1.5 mb-8">Nosotros</li>
+                <li className="myPBold text-iGrey3 mt-2 mb-8">Nosotros</li>
               </Link>
             </div>
             <div className="w-[210px]">
@@ -48,7 +69,7 @@ const Footer = () => {
               </li>
             </div>
           </div>
-          <p className="myP3 pb-10 text-center">
+          <p className="myP3 pb-10 text-center text-iGrey3">
             © 2000 - 2024 Inveniet. Todos los derechos reservados.
           </p>
         </div>

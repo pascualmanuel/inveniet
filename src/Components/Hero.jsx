@@ -1,36 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ReactSVG } from "react-svg";
 import Fondo from "../assets/hero-img.png";
 import Lines from "../assets/icons/bg-lines.svg";
+import MailIcon from "../assets/icons/mail-icon.svg";
+import DemoIcon from "../assets/icons/demo-icon.svg";
 const Hero = () => {
   return (
     <>
-      <div className=" max-width med:flex med:flex-row med:items-center med:justify-between my-0 mx-auto py-0 px-6 lg:pt-[70px]">
+      <div className=" max-w-[1360px] med:flex med:flex-row med:items-center med:justify-between my-0 mx-auto py-0 px-6 lg:pt-[70px]">
         <div className="flex flex-col  mb-[25px] lg:w-[52%] z-10">
           <h1 className="myH1 mb-[16px] mt-[30px] reveal-text">
             <span>Tecnología para modernizar la justicia</span>
           </h1>
           <p className="subH mb-[40px] lg:w-[500px] reveal-text">
             <span>
-              {" "}
               Inveniet es una solución para la planificación, grabación
               audiovisual, y gestión de procesos judiciales orales.
             </span>
           </p>
 
-          <div className="flex flex-row items-start">
+          <div className="flex  sm:flex-row items-start">
             <Link to={"/demo"} className="reveal-text">
               <span>
-                <div className=" h-[50px] w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg ">
-                  Solicitar demo
+                <div className=" h-[50px] w-[199px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg ">
+                  <ReactSVG src={DemoIcon} />
+                  <span className="ml-[12px]"> Solicitar demo</span>
                 </div>
               </span>
             </Link>
 
             <Link to={"/contacto"} className="reveal-text">
               <span>
-                <div className=" myCTA h-[50px] w-[125px] flex justify-center items-center bg-white rounded-lg ml-[8px] border border-iBlue ">
-                  Contacto
+                <div className=" myCTA h-[50px] w-[159px] flex justify-center items-center bg-white rounded-lg ml-[8px] border border-iGrey2 ">
+                  <ReactSVG src={MailIcon} />
+                  <span className="ml-[12px]"> Contacto</span>
                 </div>
               </span>
             </Link>

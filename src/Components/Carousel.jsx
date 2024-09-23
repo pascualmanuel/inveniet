@@ -97,7 +97,7 @@ function Carousel() {
         <>
           <div className="flex flex-row flex-wrap justify-center gap-[30px] center max-w-[1400px]">
             {data.map((item, index) => (
-              <div key={index} className="carousel-box flex">
+              <div key={index} className="carousel-box-desk flex">
                 <div className="flex flex-row items-center mb-[16px] ">
                   <ReactSVG src={CheckIcon} />
                   <h3 className="myCTA  ml-2">{item.title}</h3>

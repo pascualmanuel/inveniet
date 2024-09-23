@@ -51,7 +51,7 @@ const AboutUs = () => {
             className="pb-[43px] lg:pb-[100px] lg:pt-[100px] "
             style={{
               width: "100%",
-              maxWidth: "500px",
+              maxWidth: "570px",
               margin: "0 auto",
             }}
           >

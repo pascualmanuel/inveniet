@@ -3,7 +3,7 @@ import "../App.css";
 import { ReactSVG } from "react-svg";
 import Logo from "../assets/logo/InvenietLogoBlack.svg";
 import LogoDoble from "../assets/logo/InvenietLogoDobleColor.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [vh, setVh] = useState(0); // Estado para almacenar el valor de vh
 
@@ -30,9 +30,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // Ahora puedes usar el valor de vh en cualquier parte del componente
-  // console.log(vh); // Imprime el valor de vh en la consola
-
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [colorLogo, setColorLogo] = useState("black");
 
@@ -48,28 +45,48 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="lg:flex lg:flex-row lg:h-24 justify-between max-width items-center hidden center">
+      <nav className="lg:flex lg:flex-row lg:h-24 justify-between max-w-[1360px] items-center hidden center">
         <div className="logo">
           <Link to={"/"}>
             <ReactSVG src={Logo} />
           </Link>
         </div>
         <ul className="lg:flex lg:flex-row items-center">
-          <li className="py-2 px-4 myPBold ">
-            <Link to={"/nosotros"}>Nosotros</Link>
+          <li className="py-2 px-4 myPBold text-iGrey3">
+            <NavLink
+              to="/nosotros"
+              className={({ isActive }) =>
+                isActive ? "active-link-class" : ""
+              }
+            >
+              Nosotros
+            </NavLink>
           </li>
-          <li className="py-2 px-4 myPBold ">
-            <Link to={"/equipamiento"}>Equipamiento</Link>
+          <li className="py-2 px-4 myPBold text-iGrey3">
+            <NavLink
+              to="/equipamiento"
+              className={({ isActive }) =>
+                isActive ? "active-link-class" : ""
+              }
+            >
+              Equipamiento
+            </NavLink>
           </li>
-          <li className="py-2 px-4 myPBold ">
-            <Link to={"/faq"}>Preguntas frecuentes</Link>
+          <li className="py-2 px-4 myPBold text-iGrey3">
+            <NavLink
+              to="/faq"
+              className={({ isActive }) =>
+                isActive ? "active-link-class" : ""
+              }
+            >
+              Preguntas frecuentes
+            </NavLink>
           </li>
+
           <li className="lg:h-[50px] lg:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
-            {/* <a href="/#contact" > */}
             <Link to={"/contacto"} className="contact-button myCTA text-white">
               Contacto
             </Link>
-            {/* </a> */}
           </li>
         </ul>
       </nav>

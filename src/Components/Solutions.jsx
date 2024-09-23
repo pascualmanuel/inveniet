@@ -8,12 +8,12 @@ import { ReactSVG } from "react-svg";
 const Solutions = () => {
   const data = [
     {
-      icon: Icon4,
+      icon: Icon1,
       title: "Planificación y programación de audiencias",
       text: "Elegí la locación, fecha y hora, participantes, y toda la información  relacionada a la audiencia para aprovechar al máximo la disponibilidad de las salas.",
     },
     {
-      icon: Icon1,
+      icon: Icon2,
       title: "Sistema de grabación de audio y video",
       text: "Grabá y almacená contenido audiovisual e identificá eventos dentro de las grabaciones para facilitar la reprodución.",
     },
@@ -23,7 +23,7 @@ const Solutions = () => {
       text: "Accedé a todo el material registrado a través de diferentes parámetros de búsqueda en una base de datos y consulta estadísticas.",
     },
     {
-      icon: Icon2,
+      icon: Icon4,
       title: "Generación de actas y copias para exportar",
       text: "Generá y compartí actas firmadas digitalmente y copias para los intervinientes.",
     },
@@ -33,8 +33,8 @@ const Solutions = () => {
       <div className="bg-iGrey  w-[100vw]">
         <div className="center max-width">
           <div className="pt-[40px] pb-[25px] lg:pt-[100px] lg:pb-[40px]">
-            <h2 className="labels">SOLUCIONES</h2>
-            <p className="subH mt-2 ">
+            <h2 className="labels text-iGrey3">SOLUCIONES</h2>
+            <p className="myH2 mt-4 md:w-[620px] ">
               Brindamos soporte a las disintas etapas del proceso oral
             </p>
           </div>
@@ -44,7 +44,7 @@ const Solutions = () => {
                 <div className="box" key={index}>
                   <ReactSVG className="icon" src={item?.icon} />
                   <h3 className="myCTA my-[16px]">{item?.title}</h3>
-                  <p className="text-iGrey3">{item?.text}</p>
+                  <p className="myP2 text-iGrey3">{item?.text}</p>
                 </div>
               ))}
             </div>

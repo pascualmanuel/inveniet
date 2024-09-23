@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .max-width {
-  max-width: 1360px;
+  max-width: 1240px;
 }
 
 @media (max-width: 767px) {
@@ -164,15 +164,17 @@ p {
   src: url("./assets/fonts/FellixTRIALVF-Uprights.woff2") format("woff2");
   font-style: normal;
 }
-
+.active-link-class {
+  color: #161c2d;
+}
 .myH1 {
   /* H1 Desktop */
   font-family: "Fellix", sans-serif;
   font-style: normal;
-  font-weight: 450;
-  font-size: 54px;
-  line-height: 60px;
-  letter-spacing: -1px;
+  font-weight: 550;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -2px;
 }
 
 .myH2 {
@@ -180,8 +182,9 @@ p {
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 38px;
+  font-size: 44px;
+  line-height: 52px;
+  letter-spacing: -1.2px;
 }
 
 .subH {
@@ -189,8 +192,8 @@ p {
   font-family: "Fellix", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: 0;
 }
 
@@ -219,7 +222,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 121.4%;
+  line-height: 20px;
 }
 
 .myP3 {
@@ -274,7 +277,9 @@ p {
     /* H1 Mobile */
     font-size: 40px;
     line-height: 45px;
+    letter-spacing: -1px;
   }
+
   .myH2 {
     /* H2 Mobile */
     font-weight: 500;
@@ -284,8 +289,10 @@ p {
   }
   .subH {
     /* SubHeading - Mobile */
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 23px;
   }
+
   .lines-hero {
     margin-top: -50px;
   }
