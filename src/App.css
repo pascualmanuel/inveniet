@@ -164,6 +164,12 @@ p {
   src: url("./assets/fonts/FellixTRIALVF-Uprights.woff2") format("woff2");
   font-style: normal;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .active-link-class {
   color: #161c2d;
 }

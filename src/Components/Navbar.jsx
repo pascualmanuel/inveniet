@@ -42,6 +42,14 @@ const Navbar = () => {
     });
   };
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isMobileMenuOpen]);
+
   return (
     <>
       {/* Desktop Navbar */}
@@ -119,7 +127,11 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <>
-            <ul className="absolute h-[100vh] top-20 left-0 w-full bg-iDBlue shadow-md flex flex-col items-start space-y-2 transition-all duration-300 pt-7">
+            <ul
+              className={`mobile-menu ${
+                isMobileMenuOpen ? "open" : ""
+              } absolute h-[100vh] top-20 left-0 w-full bg-iDBlue shadow-md flex flex-col items-start space-y-2 pt-7 z-[500]`}
+            >
               <li className="py-2 pl-6 myH2 text-white">
                 <Link to={"/contacto"} onClick={toggleMobileMenu}>
                   Contacto
@@ -147,8 +159,15 @@ const Navbar = () => {
                 <li className="pl-6 text-[#8D9098]">
                   Lunes - Viernes: 8 am - 6 pm
                 </li>
-                <li className="pl-6 text-[#8D9098]">contacto@inveniet.info</li>
-                <li className="pl-6 text-[#8D9098]">(+52) 5555 147914</li>
+                <li className="pl-6 text-[#8D9098]">
+                  <a href="mailto:contacto@inveniet.info">
+                    contacto@inveniet.info
+                  </a>
+                </li>
+
+                <li className="pl-6 text-[#8D9098]">
+                  <a href="tel:+5491152523301">(+54 11) 5252-3301</a>
+                </li>
               </div>
             </ul>
           </>
