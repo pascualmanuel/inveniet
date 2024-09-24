@@ -64,7 +64,7 @@ const Navbar = () => {
             <NavLink
               to="/nosotros"
               className={({ isActive }) =>
-                isActive ? "active-link-class" : ""
+                isActive ? "active-link-class" : "links"
               }
             >
               Nosotros
@@ -74,7 +74,7 @@ const Navbar = () => {
             <NavLink
               to="/equipamiento"
               className={({ isActive }) =>
-                isActive ? "active-link-class" : ""
+                isActive ? "active-link-class" : "links"
               }
             >
               Equipamiento
@@ -84,7 +84,7 @@ const Navbar = () => {
             <NavLink
               to="/faq"
               className={({ isActive }) =>
-                isActive ? "active-link-class" : ""
+                isActive ? "active-link-class" : "links"
               }
             >
               Preguntas frecuentes

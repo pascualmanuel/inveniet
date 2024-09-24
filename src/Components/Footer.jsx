@@ -38,18 +38,20 @@ const Footer = () => {
             </div>
             <div className="mt-16 md:mt-0">
               <Link to={"/contacto"}>
-                <li className="myPBold text-iGrey3">Contacto</li>
+                <li className="myPBold links text-iGrey3">Contacto</li>
               </Link>
               <Link to={"/faq"}>
-                <li className="myPBold text-iGrey3 my-2">
+                <li className="myPBold links text-iGrey3 my-2">
                   Preguntas frecuentes
                 </li>
               </Link>
               <Link to={"/equipamiento"}>
-                <li className="myPBold text-iGrey3">Equipamiento</li>
+                <li className="myPBold links text-iGrey3">Equipamiento</li>
               </Link>
               <Link to={"/nosotros"}>
-                <li className="myPBold text-iGrey3 mt-2 mb-8">Nosotros</li>
+                <li className="myPBold links text-iGrey3 mt-2 mb-8">
+                  Nosotros
+                </li>
               </Link>
             </div>
             <div className="w-[210px]">
