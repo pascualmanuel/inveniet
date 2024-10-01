@@ -168,7 +168,7 @@ const Equipamiento = () => {
           <p className="mt-8 h-[42px] w-[256px] subH flex justify-center items-center bg-iGrey rounded-lg">
             Diagrama de instalación
           </p>
-          <h3 className="myH2 my-4">Cámara Gessel</h3>
+          <h3 className="myH2 my-4">Cámara Gesell</h3>
           <img
             src={Eq6}
             className=" max-w-full block lg:hidden md:max-w-[70%] md:my-0 md:mx-auto"
