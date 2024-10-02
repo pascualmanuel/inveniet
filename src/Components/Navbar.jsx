@@ -52,7 +52,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Desktop Navbar */}
       <nav className="lg:flex lg:flex-row lg:h-24 justify-between max-w-[1360px] items-center hidden center">
         <div className="logo">
           <Link to={"/"}>
@@ -91,11 +90,22 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="lg:h-[50px] lg:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px]">
-            <Link to={"/contacto"} className="contact-button myCTA text-white">
-              Contacto
-            </Link>
-          </li>
+          <Link
+            to={"/contacto"}
+            className="contact-button myCTA text-white flex flex-row items-center group"
+          >
+            <li className="lg:h-[50px] lg:w-[125px] flex justify-center items-center bg-iBlue rounded-lg ml-[18px] relative overflow-hidden ">
+              {/* Sección de "Contacto" */}
+              <div className="flex items-center transition-transform duration-300 ease-in-out transform group-hover:-translate-y-16 contact-icon-cont">
+                <span className="mr-[10px]">Contacto</span>
+              </div>
+
+              {/* Sección de "Gracias!" */}
+              <div className="absolute flex transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-44px] thx-icon-cont opacity-1 group-hover:opacity-100 bottom-[-30px] items-center">
+                <span className="mr-[10px]">Contacto</span>
+              </div>
+            </li>
+          </Link>
         </ul>
       </nav>
 
