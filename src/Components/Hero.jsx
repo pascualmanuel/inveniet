@@ -28,13 +28,13 @@ const Hero = () => {
               <span>
                 <div className="ssm:h-[50px] ssm:w-[199px] h-[47px] max-w-[450px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg overflow-hidden relative">
                   {/* Sección de "Solicitar demo" */}
-                  <div className="flex items-center transition-transform duration-300 ease-in-out transform group-hover:-translate-y-16 demo-icon-cont">
+                  <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16 demo-icon-cont">
                     <ReactSVG src={DemoIcon} />
                     <span className="ml-[12px]">Solicitar demo</span>
                   </div>
 
                   {/* Sección de "Gracias!" */}
-                  <div className="absolute flex transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-44px] thx-icon-cont opacity-1 group-hover:opacity-100 bottom-[-30px] items-center">
+                  <div className="absolute flex transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px] thx-icon-cont opacity-1 sm:group-hover:opacity-100 bottom-[-30px] items-center">
                     <ReactSVG src={DemoIcon} />
                     <span className="ml-[12px]">Solicitar demo</span>
                   </div>
@@ -49,13 +49,13 @@ const Hero = () => {
               <span>
                 <div className="myCTA ssm:h-[50px] ssm:w-[159px] h-[47px] max-w-[450px] flex justify-center items-center bg-white rounded-lg mt-4 ssm:mt-0 ssm:ml-[8px] border border-iGrey2 relative overflow-hidden">
                   {/* Sección de "Contacto" */}
-                  <div className="flex items-center transition-transform duration-300 ease-in-out transform group-hover:-translate-y-16 contact-icon-cont">
+                  <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16 contact-icon-cont">
                     <ReactSVG src={MailIcon} />
                     <span className="ml-[12px]">Contacto</span>
                   </div>
 
                   {/* Sección de "Gracias!" */}
-                  <div className="absolute flex transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-44px] thx-icon-cont opacity-1 group-hover:opacity-100 bottom-[-30px] items-center">
+                  <div className="absolute flex transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px] thx-icon-cont opacity-1 sm:group-hover:opacity-100 bottom-[-30px] items-center">
                     <ReactSVG src={MailIcon} />
                     <span className="ml-[12px]">Contacto</span>
                   </div>

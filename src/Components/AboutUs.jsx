@@ -15,13 +15,13 @@ const AboutUs = () => {
               Inveniet ofrece tecnología orientada a los diferentes procesos
               judiciales.
             </p>
-            <div className="h-[50px] w-[192px] flex justify-center items-center bg-[#f4f7fa1a] rounded-lg relative overflow-hidden group">
-              <Link
-                to={"/nosotros"}
-                className="contact-button myCTA text-white flex flex-row items-center "
-              >
+            <Link
+              to={"/nosotros"}
+              className="contact-button myCTA text-white flex flex-row items-center group "
+            >
+              <div className="h-[50px] w-[192px] flex justify-center items-center bg-[#f4f7fa1a] rounded-lg relative overflow-hidden ">
                 {/* Sección de "Sobre ustedes" */}
-                <div className="flex items-center transition-transform duration-300 ease-in-out transform group-hover:-translate-y-16 contact-icon-cont">
+                <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16 contact-icon-cont">
                   <span className="mr-[10px] text-white">Sobre nosotros</span>
                   <svg
                     width="15"
@@ -48,7 +48,7 @@ const AboutUs = () => {
                 </div>
 
                 {/* Sección de "Chau!" */}
-                <div className="absolute flex transition-transform duration-300 ease-in-out transform group-hover:translate-y-[-44px] thx-icon-cont opacity-1 group-hover:opacity-100 bottom-[-30px] items-center">
+                <div className="absolute flex transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px] thx-icon-cont opacity-1 sm:group-hover:opacity-100 bottom-[-30px] items-center">
                   <span className="mr-[10px] text-white">Sobre nosotros</span>
                   <svg
                     width="15"
@@ -73,8 +73,8 @@ const AboutUs = () => {
                     />
                   </svg>
                 </div>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
 
           <div

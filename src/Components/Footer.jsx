@@ -19,42 +19,62 @@ const Footer = () => {
               </p>
 
               <div className="flex flex-row items-start">
-                <Link to={"/demo"} className="">
+                <Link to={"/demo"} className="group">
                   <span>
-                    <div className=" text-iGrey  h-[50px] w-[165px] myCTA  flex justify-center items-center bg-iBlue rounded-lg ">
-                      Solicitar demo
+                    <div className="text-iGrey h-[50px] w-[165px] myCTA flex justify-center items-center bg-iBlue rounded-lg relative overflow-hidden">
+                      <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16">
+                        <span className="">Solicitar demo</span>
+                      </div>
+
+                      <div className="absolute flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px]  bottom-[-30px]">
+                        <span className="">Solicitar demo</span>
+                      </div>
                     </div>
                   </span>
                 </Link>
 
-                <Link to={"/contacto"} className="">
+                <Link to={"/demo"} className="group">
+                  <span>
+                    <div className="text-iDBlue h-[50px] w-[125px] myCTA flex justify-center items-center  rounded-lg relative overflow-hidden">
+                      <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16">
+                        <span className="">Contacto</span>
+                      </div>
+
+                      <div className="absolute flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px]  bottom-[-30px]">
+                        <span className="">Contacto</span>
+                      </div>
+                    </div>
+                  </span>
+                </Link>
+
+                {/* <Link to={"/contacto"} className="">
                   <span>
                     <div className="myCTA h-[50px] w-[125px] flex justify-center items-center rounded-lg ml-[8px] text-[]  ">
                       Contacto
                     </div>
                   </span>
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="mt-16 md:mt-0">
               <Link to={"/contacto"}>
-                <li className="myPBold hover:text-iDBlue  text-iGrey3">
-                  Contacto
+                <li className="myPBold   text-iGrey3">
+                  <p className="myPBold links w-fit"> Contacto </p>
                 </li>
               </Link>
               <Link to={"/faq"}>
-                <li className="myPBold hover:text-iDBlue  text-iGrey3 my-2">
-                  Preguntas frecuentes
+                <li className="myPBold   text-iGrey3 my-2">
+                  <p className="myPBold links w-fit"> Preguntas frecuentes</p>
                 </li>
               </Link>
               <Link to={"/equipamiento"}>
-                <li className="myPBold hover:text-iDBlue  text-iGrey3">
-                  Equipamiento
+                <li className="myPBold   text-iGrey3">
+                  <p className="myPBold links w-fit"> Equipamiento</p>
                 </li>
               </Link>
               <Link to={"/nosotros"}>
-                <li className="myPBold hover:text-iDBlue  text-iGrey3 mt-2 mb-8">
-                  Nosotros
+                <li className="myPBold   text-iGrey3 mt-2 mb-8">
+                  <p className="myPBold links w-fit"> Nosotros</p>
                 </li>
               </Link>
             </div>

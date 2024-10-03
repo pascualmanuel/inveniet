@@ -148,10 +148,18 @@ const Equipamiento = () => {
             audiovisuales. Nuestro equipo se encarga de la instalación completa,
             asegurando una experiencia fluida y profesional.
           </p>
-          <Link to={"/demo"} className="w-full">
-            <div className=" h-[50px] sm:w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
-              Solicitar demo
-            </div>
+          <Link to={"/demo"} className="group">
+            <span>
+              <div className="text-iGrey h-[50px] w-[165px] myCTA flex justify-center items-center bg-iBlue rounded-lg relative overflow-hidden">
+                <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16">
+                  <span className="">Solicitar demo</span>
+                </div>
+
+                <div className="absolute flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px]  bottom-[-30px]">
+                  <span className="">Solicitar demo</span>
+                </div>
+              </div>
+            </span>
           </Link>
         </div>
       </div>
@@ -183,10 +191,18 @@ const Equipamiento = () => {
             de control. Nuestro equipo se encarga de la instalación completa
             para asegurar un funcionamiento impecable.
           </p>
-          <Link to={"/demo"} className="w-full ">
-            <div className=" h-[50px] sm:w-[165px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg">
-              Solicitar demo
-            </div>
+          <Link to={"/demo"} className="group">
+            <span>
+              <div className="text-iGrey h-[50px] w-[165px] myCTA flex justify-center items-center bg-iBlue rounded-lg relative overflow-hidden">
+                <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16">
+                  <span className="">Solicitar demo</span>
+                </div>
+
+                <div className="absolute flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px]  bottom-[-30px]">
+                  <span className="">Solicitar demo</span>
+                </div>
+              </div>
+            </span>
           </Link>
         </div>
       </div>

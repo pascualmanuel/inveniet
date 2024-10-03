@@ -190,12 +190,13 @@ p {
   transform: scaleX(0); /* Inicia con la línea invisible */
   transform-origin: left; /* Cambia el origen de la transformación a la izquierda */
   transition: transform 0.5s ease; /* Transición suave */
+  margin-bottom: -6px;
 }
 
 .links:hover::after {
   transform: scaleX(1); /* Muestra la línea al hacer hover */
 
-  margin-bottom: -3px;
+  margin-bottom: -6px;
 }
 
 .active-link-class {
@@ -307,6 +308,9 @@ p {
   }
 } */
 @media (max-width: 767px) {
+  .no-hover {
+    transform: none !important;
+  }
   .myH1 {
     /* H1 Mobile */
     font-size: 40px;
