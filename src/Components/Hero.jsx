@@ -27,13 +27,11 @@ const Hero = () => {
             >
               <span>
                 <div className="ssm:h-[50px] ssm:w-[199px] h-[47px] max-w-[450px] myCTA text-white flex justify-center items-center bg-iBlue rounded-lg overflow-hidden relative">
-                  {/* Sección de "Solicitar demo" */}
                   <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16 demo-icon-cont">
                     <ReactSVG src={DemoIcon} />
                     <span className="ml-[12px]">Solicitar demo</span>
                   </div>
 
-                  {/* Sección de "Gracias!" */}
                   <div className="absolute flex transition-transform duration-300 ease-in-out transform sm:group-hover:translate-y-[-44px] thx-icon-cont opacity-1 sm:group-hover:opacity-100 bottom-[-30px] items-center">
                     <ReactSVG src={DemoIcon} />
                     <span className="ml-[12px]">Solicitar demo</span>
