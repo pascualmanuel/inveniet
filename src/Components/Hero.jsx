@@ -73,7 +73,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="reveal-text lines-reveal hidden md:block mt-[-140px]">
+      <div className="reveal-text lines-reveal  md:block mt-[-140px]">
         <span className="">
           <EcgAnimation />
         </span>
