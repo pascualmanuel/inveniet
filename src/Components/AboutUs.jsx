@@ -1,12 +1,14 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 import Beepannel from "../assets/icons/beepanel2.svg";
+import BeepannelMob from "../assets/icons/beepanel.svg";
 import LogoPannel from "../assets/icons/LogoPannel.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [rotation, setRotation] = useState(0); // Estado para la rotación
   const rotationFactor = 0.1; // Factor para reducir la velocidad de rotación
+  let itIsNotDsk = window.innerWidth < 541;
 
   useEffect(() => {
     // Función para manejar el scroll y actualizar la rotación
@@ -103,30 +105,49 @@ const AboutUs = () => {
               margin: "0 auto",
             }}
           >
-            <ReactSVG
-              src={Beepannel}
-              beforeInjection={(svg) => {
-                svg.setAttribute(
-                  "style",
-                  "width: 100%; max-width: 500px; height: auto;"
-                );
-              }}
-              className="wrapper-class-name"
-              fallback={() => <span>Error loading SVG!</span>}
-              loading={() => <span>Loading...</span>}
-              onClick={() => console.log("SVG clicked")}
-              onError={(error) => console.error("Error loading SVG:", error)}
-            />
-            <ReactSVG
-              className="hola w-[100px] absolute top-[304px] lg:top-[405px]"
-              src={LogoPannel}
-              style={{
-                transform: `rotate(${rotation}deg)`,
-                position: "",
-
-                left: "55px",
-              }} // Aplicar la rotación
-            />
+            {!itIsNotDsk ? (
+              <>
+                <ReactSVG
+                  src={Beepannel}
+                  beforeInjection={(svg) => {
+                    svg.setAttribute(
+                      "style",
+                      `width: 100%; max-width: 500px; height: auto;`
+                    );
+                  }}
+                  className="wrapper-class-name flex items-center"
+                  fallback={() => <span>Error loading SVG!</span>}
+                  loading={() => <span>Loading...</span>}
+                  onClick={() => console.log("SVG clicked")}
+                  onError={(error) =>
+                    console.error("Error loading SVG:", error)
+                  }
+                />
+                <ReactSVG
+                  className="hola w-[100px] absolute top-[304px] lg:top-[405px]"
+                  src={LogoPannel}
+                  style={{
+                    transform: `rotate(${rotation}deg)`,
+                    left: "55px",
+                  }}
+                />
+              </>
+            ) : (
+              <ReactSVG
+                src={BeepannelMob}
+                beforeInjection={(svg) => {
+                  svg.setAttribute(
+                    "style",
+                    `width: 100%; max-width: 500px; height: auto;`
+                  );
+                }}
+                className="wrapper-class-name flex items-center"
+                fallback={() => <span>Error loading SVG!</span>}
+                loading={() => <span>Loading...</span>}
+                onClick={() => console.log("SVG clicked")}
+                onError={(error) => console.error("Error loading SVG:", error)}
+              />
+            )}
           </div>
         </div>
       </div>
