@@ -15,6 +15,7 @@ import ContactForm from "./Components/ContactForm";
 import Contacto from "./Pages/Contact";
 import Demo from "./Pages/Demo";
 import GoToTop from "./Components/ScrollToTop";
+import EcgAnimation from "./Components/EcgAnimation";
 function App() {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/demo" element={<Demo />} />
+        <Route path="/test" element={<EcgAnimation />} />
       </Routes>
       <Footer />
     </BrowserRouter>

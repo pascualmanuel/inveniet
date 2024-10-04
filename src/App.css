@@ -335,3 +335,15 @@ p {
     margin-top: -50px;
   }
 }
+
+.ecg-line {
+  stroke-dasharray: 400; /* Esto define la longitud del trazo */
+  stroke-dashoffset: 400; /* Oculta toda la línea al principio */
+  animation: draw 2s linear infinite; /* Animación infinita */
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 10; /* Dibuja la línea */
+  }
+}
