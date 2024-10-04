@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="lg:flex lg:flex-row lg:h-24 justify-between max-w-[1360px] items-center hidden center">
+      <nav className="lg:flex lg:flex-row lg:h-24 justify-between max-width items-center hidden center">
         <div className="logo">
           <Link to={"/"}>
             <ReactSVG src={Logo} />

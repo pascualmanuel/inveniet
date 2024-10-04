@@ -145,14 +145,14 @@ import { motion } from "framer-motion";
 
 const BarAnimation = () => {
   const [barsCount, setBarsCount] = useState(0);
-  const barMargin = 16; // Margen entre las barras en px
   const [delays, setDelays] = useState([]);
+  const barMargin = 16;
 
   useEffect(() => {
     const updateBarsCount = () => {
       const totalWidth = window.innerWidth; // Ancho total de la ventana
-      const barWidth = 3; // Ancho de cada barra (strokeWidth)
-      const marginWidth = barMargin; // Margen entre barras
+      const barWidth = 3;
+      const marginWidth = barMargin;
 
       // Calcular la cantidad de barras que pueden caber
       const count = Math.floor(
@@ -168,10 +168,8 @@ const BarAnimation = () => {
       setDelays(randomDelays);
     };
 
-    // Inicializar el conteo de barras
     updateBarsCount();
 
-    // Actualizar el conteo de barras al redimensionar la ventana
     window.addEventListener("resize", updateBarsCount);
 
     return () => {
@@ -183,16 +181,15 @@ const BarAnimation = () => {
     <div
       style={{
         display: "flex",
-        justifyContent: "space-between", // Distribuir las barras
+        justifyContent: "space-between",
         alignItems: "flex-end",
         height: "200px",
-        width: "100vw", // Asegurarse de que el contenedor tenga 100vw
+        width: "100vw",
         overflow: "hidden",
-        position: "relative", // Para manejar la posición de las barras
+        position: "relative",
       }}
     >
       {Array.from({ length: barsCount }).map((_, index) => {
-        // Generar una altura aleatoria para cada barra
         const initialHeight = Math.random() * 150 + 50; // Altura aleatoria inicial
         return (
           <motion.div
@@ -207,7 +204,7 @@ const BarAnimation = () => {
               height: [initialHeight, Math.random() * 150 + 50, initialHeight], // Animar la altura de la barra
             }}
             transition={{
-              duration: 2,
+              duration: 1.5,
               repeat: Infinity,
               ease: "easeInOut",
               delay: delays[index] || 0, // Retraso para cada barra basado en el arreglo de delays
