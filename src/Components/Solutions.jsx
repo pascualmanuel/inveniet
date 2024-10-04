@@ -64,7 +64,7 @@ const Solutions = () => {
   }, []);
 
   return (
-    <div className="bg-iGrey w-[100vw] h-[665px]" ref={sectionRef}>
+    <div className="bg-iGrey w-[100vw]" ref={sectionRef}>
       <div className="center max-width">
         <div className="pt-[40px] pb-[25px] lg:pt-[100px] lg:pb-[40px]">
           <h2
@@ -85,7 +85,9 @@ const Solutions = () => {
         <div>
           <div
             className={` ${
-              showBoxes ? `box-grid pb-[40px] lg:pb-[100px] ` : ""
+              showBoxes
+                ? `box-grid pb-[40px] lg:pb-[100px] `
+                : "box-grid pb-[40px] lg:pb-[200px]"
             }`}
           >
             {data.map((item, index) => (

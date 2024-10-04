@@ -2,10 +2,16 @@ import React from "react";
 import { ReactSVG } from "react-svg";
 import Logo from "../assets/logo/InvenietLogoBlack.svg";
 import { Link } from "react-router-dom";
+import EcgAnimation from "./EcgAnimation";
 const Footer = () => {
   return (
     <>
-      <div className="lines-bg h-[80px] lg:h-[153px] "></div>
+      {/* <div className="lines-bg  "></div> */}
+      <div className="reveal-text lines-reveal hidden md:block mt-[20px] ">
+        <span className="">
+          <EcgAnimation />
+        </span>
+      </div>
       <div className="bg-iGrey  w-[100vw]">
         <div className="center max-width ]">
           <div className="pt-10 lg:pt-20 pb-7 mb-7 border-b border-iGrey3 md:border-none md:flex md:flex-row md:justify-between">

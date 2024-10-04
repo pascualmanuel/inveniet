@@ -118,12 +118,12 @@ const AboutUs = () => {
               onError={(error) => console.error("Error loading SVG:", error)}
             />
             <ReactSVG
-              className="hola w-[100px]"
+              className="hola w-[100px] absolute top-[304px] lg:top-[405px]"
               src={LogoPannel}
               style={{
                 transform: `rotate(${rotation}deg)`,
-                position: "absolute",
-                top: "405px",
+                position: "",
+
                 left: "55px",
               }} // Aplicar la rotación
             />
