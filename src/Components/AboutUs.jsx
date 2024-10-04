@@ -1,17 +1,18 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
-import Beepannel from "../assets/icons/beepanel.svg";
-import Beepannel2 from "../assets/icons/beepanel.svg";
+import Beepannel from "../assets/icons/beepanel2.svg";
+import LogoPannel from "../assets/icons/LogoPannel.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 const AboutUs = () => {
-  const [rotation, setRotation] = useState(0); // Nuevo estado para la rotación
+  const [rotation, setRotation] = useState(0); // Estado para la rotación
+  const rotationFactor = 0.1; // Factor para reducir la velocidad de rotación
 
   useEffect(() => {
     // Función para manejar el scroll y actualizar la rotación
     const handleScroll = () => {
       const scrollY = window.scrollY; // Obtener la posición del scroll
-      setRotation(scrollY % 360); // Calcular la rotación, usa el módulo para mantenerla entre 0-359
+      setRotation((scrollY * rotationFactor) % 360); // Calcular la rotación con el factor
     };
 
     window.addEventListener("scroll", handleScroll); // Agregar el event listener para el scroll
@@ -95,7 +96,7 @@ const AboutUs = () => {
           </div>
 
           <div
-            className="pb-[43px] lg:pb-[100px] lg:pt-[100px]"
+            className="pb-[43px] lg:pb-[100px] lg:pt-[100px] relative"
             style={{
               width: "100%",
               maxWidth: "570px",
@@ -111,11 +112,20 @@ const AboutUs = () => {
                 );
               }}
               className="wrapper-class-name"
-              style={{ transform: `rotate(${rotation}deg)` }} // Aplicar la rotación
               fallback={() => <span>Error loading SVG!</span>}
               loading={() => <span>Loading...</span>}
               onClick={() => console.log("SVG clicked")}
               onError={(error) => console.error("Error loading SVG:", error)}
+            />
+            <ReactSVG
+              className="hola w-[100px]"
+              src={LogoPannel}
+              style={{
+                transform: `rotate(${rotation}deg)`,
+                position: "absolute",
+                top: "405px",
+                left: "55px",
+              }} // Aplicar la rotación
             />
           </div>
         </div>
