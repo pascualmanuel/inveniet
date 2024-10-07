@@ -168,12 +168,26 @@ const BarAnimation = () => {
       setDelays(randomDelays);
     };
 
+    const handleResize = () => {
+      const currentWidth = window.innerWidth;
+      const currentHeight = window.innerHeight;
+
+      // Si solo cambia la altura, no hacemos nada
+      if (currentWidth === window.previousWidth) return;
+
+      // Guardamos el nuevo ancho para compararlo la próxima vez
+      window.previousWidth = currentWidth;
+      updateBarsCount();
+    };
+
+    window.previousWidth = window.innerWidth; // Inicializamos con el ancho actual
+    window.addEventListener("resize", handleResize);
+
+    // Llamamos la función inicial para configurar las barras al cargar
     updateBarsCount();
 
-    window.addEventListener("resize", updateBarsCount);
-
     return () => {
-      window.removeEventListener("resize", updateBarsCount);
+      window.removeEventListener("resize", handleResize);
     };
   }, [barMargin]);
 
@@ -187,10 +201,14 @@ const BarAnimation = () => {
         width: "100vw",
         overflow: "hidden",
         position: "relative",
+        zIndex: "-1",
+        userSelect: "none",
       }}
     >
       {Array.from({ length: barsCount }).map((_, index) => {
         const initialHeight = Math.random() * 150 + 50; // Altura aleatoria inicial
+        console.log(initialHeight);
+
         return (
           <motion.div
             key={index}
@@ -199,6 +217,8 @@ const BarAnimation = () => {
               backgroundColor: "#F4F7FA", // color de la barra
               height: initialHeight, // altura inicial aleatoria
               borderRadius: "8px", // borderRadius para las barras
+              zIndex: "-1",
+              overflow: "hidden",
             }}
             animate={{
               height: [initialHeight, Math.random() * 150 + 50, initialHeight], // Animar la altura de la barra

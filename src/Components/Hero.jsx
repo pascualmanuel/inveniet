@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const Hero = () => {
   return (
     <>
-      <div className="h-[80vh]">
+      <div className="h-[80vh] z-[100]">
         <div className="max-width med:flex med:flex-row med:items-center med:justify-between my-0 mx-auto py-0 px-6 lg:pt-[70px]">
           <div className="flex flex-col mb-[25px] lg:w-[52%] z-10">
             <h1 className="myH1 mb-[16px] mt-[30px] reveal-text h1-reveal ">
@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="mb-[30px] reveal-text image-reveal md:w-[100vw] md:flex md:justify-center lg:w-[43%]">
+          <div className="mb-[30px] reveal-text image-reveal md:w-[100vw] flex md:justify-center lg:w-[43%]">
             <span>
               <img
                 src={Fondo}
@@ -73,7 +73,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="reveal-text lines-reveal  md:block mt-[-140px]">
+      <div className="reveal-text lines-reveal  block mt-[-140px] z-[-10]">
         <span className="">
           <EcgAnimation />
         </span>

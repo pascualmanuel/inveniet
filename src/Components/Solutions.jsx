@@ -48,7 +48,7 @@ const Solutions = () => {
         }
       },
       {
-        threshold: 0.8, // Ajusta el umbral según sea necesario
+        threshold: 0.6, // Ajusta el umbral según sea necesario
       }
     );
 
