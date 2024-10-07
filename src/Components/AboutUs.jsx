@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 const AboutUs = () => {
   const [rotation, setRotation] = useState(0); // Estado para la rotación
-  const rotationFactor = 0.1; // Factor para reducir la velocidad de rotación
+  const rotationFactor = 0.2; // Factor para reducir la velocidad de rotación
   let itIsNotDsk = window.innerWidth < 541;
 
   useEffect(() => {
