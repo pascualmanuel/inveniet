@@ -48,7 +48,7 @@ const WhyUs = () => {
                 key={index}
                 src={logo?.src}
                 alt={`Logo ${index + 1}`}
-                // loading="lazy"
+                loading="lazy"
                 style={{
                   width: isDesktop ? logo.deskWidth : logo.width,
                   height: isDesktop ? logo.deskHeight : logo.height,
