@@ -76,7 +76,7 @@ const BarAnimation = () => {
           <motion.div
             key={index}
             style={{
-              width: "4px", // strokeWidth
+              width: isMobile ? 3 : 4,
               backgroundColor: "#F4F7FA", // color de la barra
               height: initialHeight, // altura inicial aleatoria
               borderRadius: "8px", // borderRadius para las barras
