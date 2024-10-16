@@ -102,7 +102,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="myP3 pb-10 text-center text-iGrey3">
-            © 2000 - 2024 Inveniet. Todos los derechos reservados.
+            © 2000 - 2024 Domace S.A. Todos los derechos reservados.
           </p>
         </div>
       </div>
