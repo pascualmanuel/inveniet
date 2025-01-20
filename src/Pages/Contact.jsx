@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../Components/ContactForm";
+import { useEffect, useState } from "react";
 
 const Contacto = () => {
   useEffect(() => {

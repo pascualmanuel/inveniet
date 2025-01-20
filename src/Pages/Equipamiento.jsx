@@ -7,6 +7,7 @@ import Eq33 from "../assets/eq-3-mob.png";
 import Eq4 from "../assets/equipment-fiscalia.jpg";
 import Eq5 from "../assets/sa.png";
 import Eq6 from "../assets/cg.png";
+import { useEffect } from "react";
 
 const Equipamiento = () => {
   useEffect(() => {

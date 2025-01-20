@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 // import "./FAQ.css"; // Add your styles here
 
 const FAQItem = ({ number, title, answer }) => {
