@@ -9,6 +9,9 @@ import Eq5 from "../assets/sa.png";
 import Eq6 from "../assets/cg.png";
 
 const Equipamiento = () => {
+  useEffect(() => {
+    document.title = "Inveniet - Equipamiento";
+  }, []);
   let isNotDesktop = window.innerWidth < 1024;
   let Img3 = Eq3;
 

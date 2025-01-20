@@ -4,7 +4,9 @@ import React, { useState, useRef } from "react";
 const FAQItem = ({ number, title, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   const answerRef = useRef(null); // Reference to the answer div
-
+  useEffect(() => {
+    document.title = "Inveniet - Preguntas Frecuentes";
+  }, []);
   return (
     <div className="faq-item select-none" onClick={() => setIsOpen(!isOpen)}>
       <div className="faq-header">

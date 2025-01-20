@@ -2,6 +2,9 @@ import React from "react";
 import ContactForm from "../Components/ContactForm";
 
 const Contacto = () => {
+  useEffect(() => {
+    document.title = "Inveniet - Contacto";
+  }, []);
   return (
     <>
       <div className="flex justify-center mt-12 px-6 md:px-8">

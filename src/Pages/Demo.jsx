@@ -2,6 +2,9 @@ import React from "react";
 import DemoForm from "../Components/DemoForm";
 
 const Demo = () => {
+  useEffect(() => {
+    document.title = "Inveniet - Demo";
+  }, []);
   return (
     <>
       <div className="flex justify-center mt-12 px-6 md:px-8">

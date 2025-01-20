@@ -1,10 +1,9 @@
 import React from "react";
 
 const Nosotros = () => {
-  // display: flex;
-  // align-items: center;
-  // padding-left: 80px;
-  // padding-top: 100px;
+  useEffect(() => {
+    document.title = "Inveniet - Nosotros";
+  }, []);
   return (
     <>
       <div className="w-screen h-[250px] nosotros-bg lg:h-[350px] z-[-1] flex items-center">
