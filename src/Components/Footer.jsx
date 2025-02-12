@@ -39,7 +39,7 @@ const Footer = () => {
                   </span>
                 </Link>
 
-                <Link to={"/demo"} className="group">
+                <Link to={"/contacto"} className="group">
                   <span>
                     <div className="text-iDBlue h-[50px] w-[125px] myCTA flex justify-center items-center  rounded-lg relative overflow-hidden">
                       <div className="flex items-center transition-transform duration-300 ease-in-out transform sm:group-hover:-translate-y-16">
