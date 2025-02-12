@@ -38,7 +38,7 @@ const Solutions = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          console.log("true");
+
           observer.disconnect(); // Deja de observar una vez que es visible
 
           // Después de mostrar el título y el párrafo, muestra las cajas

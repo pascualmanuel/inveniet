@@ -70,7 +70,6 @@ const BarAnimation = () => {
     >
       {Array.from({ length: barsCount }).map((_, index) => {
         const initialHeight = Math.random() * 150 + 50; // Altura aleatoria inicial
-        console.log(initialHeight);
 
         return (
           <motion.div
